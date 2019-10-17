@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.PizzaBros.DTO.PizzaDTO;
+import com.PizzaBros.mapper.PizzaMapper;
 import com.PizzaBros.model.Pizza;
 import com.PizzaBros.repository.PizzaRepository;
 
@@ -27,7 +28,7 @@ public class PizzaService {
 	public PizzaDTO findOne(Long id) {
 		Optional<Pizza> pizzaOp = pizzaRepository.findById(id);
 		if (pizzaOp.isPresent()) {
-			return movieMapper.toDto(pizzaOp.get());
+			return pizzaMapper.toDto(pizzaOp.get());
 		}
 		return null;
 	}
@@ -36,7 +37,7 @@ public class PizzaService {
 	public PizzaDTO save(PizzaDTO pizza) {
 	Pizza entity = pizzaMapper.toEntity(pizza);
 	Pizza saved = pizzaRepository.save(entity);
-	return movieMapper.toDto(saved);
+	return pizzaMapper.toDto(saved);
 	}
 	
 	
@@ -56,7 +57,7 @@ public class PizzaService {
 			throw new IllegalArgumentException();
 			}
 		}
-	}
+	
 	public void delete(Long id) {
 		pizzaRepository.deleteById(id);
 	}

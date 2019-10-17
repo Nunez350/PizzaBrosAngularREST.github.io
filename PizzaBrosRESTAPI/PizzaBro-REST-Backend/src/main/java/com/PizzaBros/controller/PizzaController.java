@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.PizzaBros.DTO.PizzaDTO;
 import com.PizzaBros.services.PizzaService;
-import com.test.dto.MovieDTO;
+
 
 @RestController
 @RequestMapping("/api")
