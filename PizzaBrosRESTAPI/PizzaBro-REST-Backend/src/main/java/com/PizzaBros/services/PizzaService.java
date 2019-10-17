@@ -8,8 +8,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.PizzaBros.DTO.PizzaDTO;
 import com.PizzaBros.model.Pizza;
-import com.test.model.Movie;
+import com.PizzaBros.repository.PizzaRepository;
+
 
 @Service
 @Transactional
@@ -18,6 +20,7 @@ public class PizzaService {
 	@Autowired
 	private PizzaRepository pizzaRepository;
 	
+	@Autowired
 	private PizzaMapper pizzaMapper;
 	
 	

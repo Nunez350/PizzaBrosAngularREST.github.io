@@ -13,7 +13,7 @@ import javax.persistence.GenerationType;
 import org.springframework.stereotype.Service;
 
 @Entity
-@Table(name ="Pizza")
+@Table(name ="pizza")
 public class Pizza implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -27,6 +27,7 @@ public class Pizza implements Serializable {
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
+	
 	public Long getId() {
 		return id;
 	}
