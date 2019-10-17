@@ -20,7 +20,7 @@ public class PizzaController {
 	}
 	
 	@GetMapping("/pizza")
-	public List<PizzaDTO> getAll(@RequestParam(name = "category", required = false) String category,@RequestParam(name = "related", required = false) boolean related, @RequestParam(name = "metadata", required = false) boolean metadata) {
+	public List<PizzaDTO> getAll(@RequestParam(name = "id", required = false) String category,@RequestParam(name = "related", required = false) boolean related, @RequestParam(name = "metadata", required = false) boolean metadata) {
 		return pizzaService.findAll(category);
 	}
 }

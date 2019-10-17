@@ -19,7 +19,7 @@ public class Pizza implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id");
+	@Column(name = "id")
 	private Long id;
 	private String name;
 	private String description;
