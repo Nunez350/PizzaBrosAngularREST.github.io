@@ -9,10 +9,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.PizzaBros.DTO.PizzaDTO;
-import com.PizzaBros.mapper.PizzaMapper;
+import com.PizzaBros.DTO.ProductDTO;
+import com.PizzaBros.mapper.ProductMapper;
 import com.PizzaBros.model.Product;
-import com.PizzaBros.repository.PizzaRepository;
+import com.PizzaBros.repository.ProductRepository;
 
 
 
@@ -49,7 +49,7 @@ public class ProductService {
 	
 	
 	public ProductDTO save(ProductDTO product) {
-		Product entity = productMapper.toEntity(pizza);
+		Product entity = productMapper.toEntity(product);
 		Product saved = productRepository.save(entity);
 	return productMapper.toDto(saved);
 	}

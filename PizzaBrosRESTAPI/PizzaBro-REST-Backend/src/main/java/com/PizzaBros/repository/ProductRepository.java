@@ -11,4 +11,6 @@ import com.PizzaBros.model.Product;
 public interface ProductRepository extends JpaRepository<Product, Long>{
 	List<Product> findAllById(String id );
 
+	List<Product> findAllByCategory(String category);
+
 }
