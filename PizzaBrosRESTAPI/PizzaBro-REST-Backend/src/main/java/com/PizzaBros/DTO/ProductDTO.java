@@ -3,23 +3,23 @@ package com.PizzaBros.DTO;
 import javax.validation.constraints.NotNull;
 
 public class ProductDTO {
-	private Long productId;
+	private int productId;
 	
 	@NotNull
 	//private Long id;
 	private String name;
 	private String description;
 	private String image;
-	
+	private String category;
 	@NotNull
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
 	
-	public Long getProductId() {
+	public int getProductId() {
 		return productId;
 	}
-	public void setProductId(Long productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 //	public Long getId() {

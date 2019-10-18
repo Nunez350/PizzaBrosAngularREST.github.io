@@ -24,6 +24,7 @@ public class ProductMapper {
 	
 	public ProductDTO toDto(Product entity) {
 		ProductDTO product = new ProductDTO();
+		product.setCategory(entity.getCategory());
 		product.setProductId(entity.getId());
 		product.setName(entity.getName());
 		product.setDescription(entity.getDescription());
