@@ -2,7 +2,7 @@ package com.PizzaBros.mapper;
 
 import org.springframework.stereotype.Component;
 
-import com.PizzaBros.DTO.PizzaDTO;
+import com.PizzaBros.DTO.ProductDTO;
 import com.PizzaBros.model.Product;
 import com.PizzaBros.repository.ProductRepository;
 
