@@ -21,62 +21,62 @@ import com.PizzaBros.repository.PizzaRepository;
 public class ProductService {
 
 	@Autowired
-	private ProductRepository pizzaRepository;
+	private ProductRepository productRepository;
 	
 	@Autowired
-	private ProductMapper pizzaMapper;
+	private ProductMapper productMapper;
 	
 	
 	public List<ProductDTO> findAll(String category) {
 		List<Product> findAll = null;
 		
 		if (category != null && !category.isEmpty()) {
-			findAll = pizzaRepository.findAllByCategory(category);
+			findAll = productRepository.findAllByCategory(category);
 		} else {
-			findAll = pizzaRepository.findAll();
+			findAll = productRepository.findAll();
 		}
-		return findAll.stream().map(m -> pizzaMapper.toDto(m)).collect(Collectors.toList());
+		return findAll.stream().map(m -> productMapper.toDto(m)).collect(Collectors.toList());
 	}
 	
 	
 	public ProductDTO findOne(Long id) {
-		Optional<Product> pizzaOp = pizzaRepository.findById(id);
-		if (pizzaOp.isPresent()) {
-			return pizzaMapper.toDto(pizzaOp.get());
+		Optional<Product> productOp = productRepository.findById(id);
+		if (productOp.isPresent()) {
+			return productMapper.toDto(productOp.get());
 		}
 		return null;
 	}
 	
 	
-	public ProductDTO save(ProductDTO pizza) {
-	Pizza entity = pizzaMapper.toEntity(pizza);
-	Pizza saved = pizzaRepository.save(entity);
-	return pizzaMapper.toDto(saved);
+	public ProductDTO save(ProductDTO product) {
+		Product entity = productMapper.toEntity(pizza);
+		Product saved = productRepository.save(entity);
+	return productMapper.toDto(saved);
 	}
 	
 	
-	public ProductDTO update(ProductDTO pizza, Long id) {
-		Optional<Product>findById = pizzaRepository.findById(id);
+	public ProductDTO update(ProductDTO product, Long id) {
+		Optional<Product>findById = productRepository.findById(id);
 		if (findById.isPresent()) {
 			Product p = findById.get();
-			p.setName(pizza.getName());
-			p.setDescription(pizza.getDescription());
-			p.setImage(pizza.getImage());
-			p.setPrice(pizza.getPrice());
-			p.setInventory(pizza.getInventory());
-			p.setSales(pizza.getSales());
+			p.setName(product.getName());
+			p.setDescription(product.getDescription());
+			p.setImage(product.getImage());
+			p.setPrice(product.getPrice());
+			p.setInventory(product.getInventory());
+			p.setSales(product.getSales());
 			
-			ProductDTO pizzaDTO = new ProductDTO();
+			ProductDTO productDTO = new ProductDTO();
 			//Pizza saved=pizzaDTO.save(p);
-			Product saved = pizzaRepository.save(p);
-			return pizzaMapper.toDto(saved);
+			Product saved = productRepository.save(p);
+			return productMapper.toDto(saved);
 		} else {
 			throw new IllegalArgumentException();
 			}
 		}
 	
 	public void delete(Long id) {
-		pizzaRepository.deleteById(id);
+		productRepository.deleteById(id);
 	}
 
 	

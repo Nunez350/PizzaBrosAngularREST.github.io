@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.PizzaBros.model.Pizza;
+import com.PizzaBros.model.Product;
 
 @Repository
-public interface PizzaRepository extends JpaRepository<Pizza, Long>{
-	List<Pizza> findAllById(String id );
+public interface ProductRepository extends JpaRepository<Product, Long>{
+	List<Product> findAllById(String id );
 
 }
