@@ -19,8 +19,10 @@ public class ProductController {
 		this.productService = productService;
 	}
 	
-	@GetMapping("/product")
-	public List<ProductDTO> getAll(@RequestParam(name = "id", required = false) String category,@RequestParam(name = "related", required = false) boolean related, @RequestParam(name = "metadata", required = false) boolean metadata) {
+	@GetMapping("/products")
+	public List<ProductDTO> getAll(@RequestParam(name = "category", required = false) String category,
+	@RequestParam(name = "related", required = false) boolean related, 
+	@RequestParam(name = "metadata", required = false) boolean metadata) {
 		return productService.findAll(category);
 	}
 }

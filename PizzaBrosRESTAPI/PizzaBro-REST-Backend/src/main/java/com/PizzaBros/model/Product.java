@@ -42,6 +42,16 @@ public class Product implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+	
 	public String getDescription() {
 		return description;
 	}
@@ -73,13 +83,6 @@ public class Product implements Serializable {
 		this.sales = sales;
 	}
 	
-	public String getCategory() {
-		return category;
-	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
 	
 }
 

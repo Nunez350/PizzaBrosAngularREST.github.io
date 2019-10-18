@@ -6,7 +6,7 @@ public class ProductDTO {
 	private Long productId;
 	
 	@NotNull
-	private Long id;
+	//private Long id;
 	private String name;
 	private String description;
 	private String image;
@@ -15,18 +15,19 @@ public class ProductDTO {
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
+	
 	public Long getProductId() {
 		return productId;
 	}
 	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
+//	public Long getId() {
+//		return id;
+//	}
+//	public void setId(Long id) {
+//		this.id = id;
+//	}
 	public String getName() {
 		return name;
 	}
@@ -62,6 +63,12 @@ public class ProductDTO {
 	}
 	public void setSales(Integer sales) {
 		this.sales = sales;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	
 	

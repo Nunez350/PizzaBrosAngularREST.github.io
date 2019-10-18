@@ -11,14 +11,15 @@ public class ProductMapper {
 
 	
 	public Product toEntity(ProductDTO dto) {
-		Product pizza = new Product();		
-		pizza.setName(dto.getName());
-		pizza.setDescription(dto.getDescription());
-		pizza.setImage(dto.getImage());
-		pizza.setPrice(dto.getPrice());
-		pizza.setInventory(dto.getInventory());
-		pizza.setSales(dto.getSales());
-		return pizza;
+		Product product = new Product();		
+		product.setCategory(dto.getCategory());
+		product.setName(dto.getName());
+		product.setDescription(dto.getDescription());
+		product.setImage(dto.getImage());
+		product.setPrice(dto.getPrice());
+		product.setInventory(dto.getInventory());
+		product.setSales(dto.getSales());
+		return product;
 	}
 	
 	public ProductDTO toDto(Product entity) {
