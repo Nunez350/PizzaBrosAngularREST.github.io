@@ -1,4 +1,4 @@
-package com.PizzaBros.DTO;
+package com.PizzaBros.PizzaBroRESTBackend.DTO;
 
 import javax.validation.constraints.NotNull;
 
@@ -11,6 +11,7 @@ public class ProductDTO {
 	private String description;
 	private String image;
 	private String category;
+	
 	@NotNull
 	private Double price;
 	private Integer inventory;

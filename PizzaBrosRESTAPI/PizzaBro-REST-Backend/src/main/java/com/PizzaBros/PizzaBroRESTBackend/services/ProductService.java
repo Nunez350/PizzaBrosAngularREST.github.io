@@ -1,4 +1,4 @@
-package com.PizzaBros.services;
+package com.PizzaBros.PizzaBroRESTBackend.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,10 +9,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.PizzaBros.DTO.ProductDTO;
-import com.PizzaBros.mapper.ProductMapper;
-import com.PizzaBros.model.Product;
-import com.PizzaBros.repository.ProductRepository;
+import com.PizzaBros.PizzaBroRESTBackend.DTO.ProductDTO;
+import com.PizzaBros.PizzaBroRESTBackend.mapper.ProductMapper;
+import com.PizzaBros.PizzaBroRESTBackend.model.Product;
+import com.PizzaBros.PizzaBroRESTBackend.repository.ProductRepository;
 
 
 
@@ -35,7 +35,7 @@ public class ProductService {
 		} else {
 			findAll = productRepository.findAll();
 		}
-		return findAll.stream().map(m -> productMapper.toDto(m)).collect(Collectors.toList());
+		return findAll.stream().map(p -> productMapper.toDto(p)).collect(Collectors.toList());
 	}
 	
 	
