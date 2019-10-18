@@ -1,4 +1,4 @@
-package com.PizzaBros.DTO;
+package com.PizzaBros.PizzaBroRESTBackend.DTO;
 
 import javax.validation.constraints.NotNull;
 

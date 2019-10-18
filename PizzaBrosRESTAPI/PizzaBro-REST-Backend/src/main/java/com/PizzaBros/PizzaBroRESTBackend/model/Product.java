@@ -13,7 +13,7 @@ import javax.persistence.GenerationType;
 import org.springframework.stereotype.Service;
 
 @Entity
-@Table(name ="product")
+@Table(name ="products")
 public class Product implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

@@ -1,5 +1,4 @@
-package com.PizzaBros.model;
-
+package com.PizzaBros.PizzaBroRESTBackend.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;
