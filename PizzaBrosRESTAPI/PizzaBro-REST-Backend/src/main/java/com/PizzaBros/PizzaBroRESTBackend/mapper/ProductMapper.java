@@ -1,10 +1,10 @@
-package com.PizzaBros.mapper;
+package com.PizzaBros.PizzaBroRESTBackend.mapper;
 
 import org.springframework.stereotype.Component;
 
-import com.PizzaBros.DTO.ProductDTO;
-import com.PizzaBros.model.Product;
-import com.PizzaBros.repository.ProductRepository;
+import com.PizzaBros.PizzaBroRESTBackend.DTO.ProductDTO;
+import com.PizzaBros.PizzaBroRESTBackend.model.Product;
+import com.PizzaBros.PizzaBroRESTBackend.repository.ProductRepository;
 
 @Component
 public class ProductMapper {
