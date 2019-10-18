@@ -39,6 +39,15 @@ public class ProductService {
 	}
 	
 	
+	
+	public List<ProductDTO> findCategory(String category) {
+		List<Product> findAll = null;
+			findAll = productRepository.findAllByCategory(category);
+		return findAll.stream().map(p -> productMapper.toDto(p)).collect(Collectors.toList());
+	}
+	
+
+	
 	public ProductDTO findOne(Long id) {
 		Optional<Product> productOp = productRepository.findById(id);
 		if (productOp.isPresent()) {
@@ -47,14 +56,7 @@ public class ProductService {
 		return null;
 	}
 	
-
-//	public ProductDTO findOne(String category) {
-//		Optional<Product> productOp = productRepository.findById(category);
-//		if (productOp.isPresent()) {
-//			return productMapper.toDto(productOp.get());
-//		}
-//		return null;
-//	}
+	
 
 	
 	public ProductDTO save(ProductDTO product) {
@@ -86,6 +88,12 @@ public class ProductService {
 	
 	public void delete(Long id) {
 		productRepository.deleteById(id);
+	}
+
+
+	public ProductDTO findAllProducts(String category) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

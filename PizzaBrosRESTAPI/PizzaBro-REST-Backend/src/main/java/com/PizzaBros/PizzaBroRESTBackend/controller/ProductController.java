@@ -46,12 +46,13 @@ public class ProductController {
 		return ResponseEntity.ok(product);
 	}
 	
-//	@GetMapping("/api/products/{category}")
-//	public ResponseEntity<ProductDTO> get(@PathVariable String category) {
-//		ProductDTO product = productService.findOne(category);
-//		return ResponseEntity.ok(product);
-//	}
-//	
+	
+	@GetMapping("/api/products/category/{category}")
+	public List<ProductDTO> getAll(@PathVariable String category) {
+		return productService.findCategory(category);	
+	}
+
+	
 	
 	@PostMapping("/api/products")
 	public ResponseEntity<ProductDTO> create(@RequestBody @Valid ProductDTO product) throws URISyntaxException {
