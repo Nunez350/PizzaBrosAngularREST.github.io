@@ -2,8 +2,8 @@ package com.PizzaBros.DTO;
 
 import javax.validation.constraints.NotNull;
 
-public class PizzaDTO {
-	private Long pizzaId;
+public class ProductDTO {
+	private Long productId;
 	
 	@NotNull
 	private Long id;
@@ -15,11 +15,11 @@ public class PizzaDTO {
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
-	public Long getPizzaId() {
-		return pizzaId;
+	public Long getProductId() {
+		return productId;
 	}
-	public void setPizzaId(Long pizzaId) {
-		this.pizzaId = pizzaId;
+	public void setProductId(Long productId) {
+		this.productId = productId;
 	}
 	public Long getId() {
 		return id;
