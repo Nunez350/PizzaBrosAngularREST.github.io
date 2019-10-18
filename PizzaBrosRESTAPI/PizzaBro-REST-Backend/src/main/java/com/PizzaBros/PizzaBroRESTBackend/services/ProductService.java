@@ -47,6 +47,15 @@ public class ProductService {
 		return null;
 	}
 	
+
+//	public ProductDTO findOne(String category) {
+//		Optional<Product> productOp = productRepository.findById(category);
+//		if (productOp.isPresent()) {
+//			return productMapper.toDto(productOp.get());
+//		}
+//		return null;
+//	}
+
 	
 	public ProductDTO save(ProductDTO product) {
 		Product entity = productMapper.toEntity(product);
@@ -78,6 +87,7 @@ public class ProductService {
 	public void delete(Long id) {
 		productRepository.deleteById(id);
 	}
+
 
 	
 

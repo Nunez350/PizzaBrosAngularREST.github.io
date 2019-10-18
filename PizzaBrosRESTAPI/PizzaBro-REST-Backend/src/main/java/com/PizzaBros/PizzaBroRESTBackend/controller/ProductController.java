@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.PizzaBros.PizzaBroRESTBackend.DTO.ProductDTO;
 import com.PizzaBros.PizzaBroRESTBackend.services.ProductService;
-import com.test.dto.MovieDTO;
 
 
 
@@ -47,7 +46,13 @@ public class ProductController {
 		return ResponseEntity.ok(product);
 	}
 	
-
+//	@GetMapping("/api/products/{category}")
+//	public ResponseEntity<ProductDTO> get(@PathVariable String category) {
+//		ProductDTO product = productService.findOne(category);
+//		return ResponseEntity.ok(product);
+//	}
+//	
+	
 	@PostMapping("/api/products")
 	public ResponseEntity<ProductDTO> create(@RequestBody @Valid ProductDTO product) throws URISyntaxException {
 		ProductDTO result = productService.save(product);
