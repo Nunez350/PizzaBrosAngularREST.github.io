@@ -13,20 +13,22 @@ import javax.persistence.GenerationType;
 import org.springframework.stereotype.Service;
 
 @Entity
-@Table(name ="pizza")
-public class Pizza implements Serializable {
+@Table(name ="product")
+public class Product implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
 	private Long id;
+	private String category;
 	private String name;
 	private String description;
 	private String image;
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
+	
 	
 	public Long getId() {
 		return id;
@@ -71,7 +73,13 @@ public class Pizza implements Serializable {
 		this.sales = sales;
 	}
 	
-	
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	
 }
 

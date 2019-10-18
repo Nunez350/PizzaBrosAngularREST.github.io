@@ -2,6 +2,7 @@ package com.PizzaBros.services;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
@@ -10,23 +11,36 @@ import org.springframework.stereotype.Service;
 
 import com.PizzaBros.DTO.PizzaDTO;
 import com.PizzaBros.mapper.PizzaMapper;
-import com.PizzaBros.model.Pizza;
+import com.PizzaBros.model.Product;
 import com.PizzaBros.repository.PizzaRepository;
+
 
 
 @Service
 @Transactional
-public class PizzaService {
+public class ProductService {
 
 	@Autowired
-	private PizzaRepository pizzaRepository;
+	private ProductRepository pizzaRepository;
 	
 	@Autowired
-	private PizzaMapper pizzaMapper;
+	private ProductMapper pizzaMapper;
 	
 	
-	public PizzaDTO findOne(Long id) {
-		Optional<Pizza> pizzaOp = pizzaRepository.findById(id);
+	public List<ProductDTO> findAll(String category) {
+		List<Product> findAll = null;
+		
+		if (category != null && !category.isEmpty()) {
+			findAll = pizzaRepository.findAllByCategory(category);
+		} else {
+			findAll = pizzaRepository.findAll();
+		}
+		return findAll.stream().map(m -> pizzaMapper.toDto(m)).collect(Collectors.toList());
+	}
+	
+	
+	public ProductDTO findOne(Long id) {
+		Optional<Product> pizzaOp = pizzaRepository.findById(id);
 		if (pizzaOp.isPresent()) {
 			return pizzaMapper.toDto(pizzaOp.get());
 		}
@@ -34,24 +48,27 @@ public class PizzaService {
 	}
 	
 	
-	public PizzaDTO save(PizzaDTO pizza) {
+	public ProductDTO save(ProductDTO pizza) {
 	Pizza entity = pizzaMapper.toEntity(pizza);
 	Pizza saved = pizzaRepository.save(entity);
 	return pizzaMapper.toDto(saved);
 	}
 	
 	
-	public PizzaDTO update(PizzaDTO pizza, Long id) {
-		Optional<Pizza>findById = pizzaRepository.findById(id);
+	public ProductDTO update(ProductDTO pizza, Long id) {
+		Optional<Product>findById = pizzaRepository.findById(id);
 		if (findById.isPresent()) {
-			Pizza p = findById.get();
+			Product p = findById.get();
 			p.setName(pizza.getName());
 			p.setDescription(pizza.getDescription());
 			p.setImage(pizza.getImage());
 			p.setPrice(pizza.getPrice());
 			p.setInventory(pizza.getInventory());
 			p.setSales(pizza.getSales());
-			Pizza saved = PizzaRepository.save(p);
+			
+			ProductDTO pizzaDTO = new ProductDTO();
+			//Pizza saved=pizzaDTO.save(p);
+			Product saved = pizzaRepository.save(p);
 			return pizzaMapper.toDto(saved);
 		} else {
 			throw new IllegalArgumentException();
@@ -61,6 +78,7 @@ public class PizzaService {
 	public void delete(Long id) {
 		pizzaRepository.deleteById(id);
 	}
+
 	
 
 }
