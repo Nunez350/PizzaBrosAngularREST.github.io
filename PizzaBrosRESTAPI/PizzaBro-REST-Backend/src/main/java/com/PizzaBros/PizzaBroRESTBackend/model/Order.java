@@ -18,7 +18,7 @@ public class Order {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
+	@Column(name = "orders_id")
 	private Integer id;
 
 	@Column(name = "customer_name")
@@ -32,6 +32,9 @@ public class Order {
 	private boolean delivered;
 	private String auth_code;
 	private Double amount;
+	
+	@OneToMany(mappedBy = "order")
+	private Set<OrderLine> orderLines;
 	
 	
 	public Integer getId() {
@@ -107,8 +110,6 @@ public class Order {
 
 
 
-	@OneToMany(mappedBy = "order")
-	private Set<OrderLine> orderLines;
 	
 	@Override
 	public String toString() {
