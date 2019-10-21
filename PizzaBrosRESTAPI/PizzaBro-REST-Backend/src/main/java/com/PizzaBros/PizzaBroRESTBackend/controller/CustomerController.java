@@ -34,24 +34,24 @@ public class CustomerController {
 	}
 	
 	@GetMapping("/api/customer")
-	public List<CustomerDTO> getAll(@RequestParam(name = "CustomerId", required = false) Long CustomerId,
+	public List<CustomerDTO> getAll(@RequestParam(name = "CustomerId", required = false) String CustomerId,
 	@RequestParam(name = "related", required = false) boolean related, 
 	@RequestParam(name = "metadata", required = false) boolean metadata) {
 		return customerService.findAll(CustomerId);	
 	}
 	
-	@GetMapping("/api/customer/{CustomerId}")
-	public ResponseEntity<CustomerDTO> get(@PathVariable Long id) {
+	/*@GetMapping("/api/customer/{CustomerId}")
+	public ResponseEntity<CustomerDTO> get(@PathVariable String id) {
 		CustomerDTO customer = customerService.findOne(id);
 		return ResponseEntity.ok(customer);
 	}
 	
 	
 	@GetMapping("/api/customer/CustomerId/{CustomerId}")
-	public List<CustomerDTO> getAll(@PathVariable Long CustomerId) {
+	public List<CustomerDTO> getAll(@PathVariable String CustomerId) {
 		return customerService.findCustomerId(CustomerId);	
 	}
-
+*/
 	
 	
 	@PostMapping("/api/customer")
@@ -61,13 +61,13 @@ public class CustomerController {
 	}
 	
 	@PutMapping("/api/customer/{CustomerId}")
-	public ResponseEntity<CustomerDTO> updateJob(@PathVariable Long id, @RequestBody @Valid CustomerDTO customer) {
+	public ResponseEntity<CustomerDTO> updateJob(@PathVariable String id, @RequestBody @Valid CustomerDTO customer) {
 		CustomerDTO result = customerService.update(customer, id);
 		return ResponseEntity.ok().body(result);
 	}
 
 	@DeleteMapping("api/customer/{CustomerId}")
-	public ResponseEntity<Void> delete(@PathVariable Long id) {
+	public ResponseEntity<Void> delete(@PathVariable String id) {
 		customerService.delete(id);
 		return ResponseEntity.ok().build();
 	}

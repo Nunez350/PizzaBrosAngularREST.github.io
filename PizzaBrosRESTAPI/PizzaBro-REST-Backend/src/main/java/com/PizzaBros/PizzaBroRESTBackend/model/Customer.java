@@ -18,8 +18,8 @@ public class Customer implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "CustomerId")
-	private Long CustomerId;
+	@Column(name = "customer_id")
+	private Long id;
 	private String firstName;
 	private String lastName;
 	private String userName;
@@ -28,10 +28,10 @@ public class Customer implements Serializable {
 	private Integer points;
 	private String address;
 	public Long getCustomerId() {
-		return CustomerId;
+		return id;
 	}
-	public void setCustomerId(Long CustomerId) {
-		this.CustomerId = CustomerId;
+	public void setCustomerId(Long id) {
+		this.id = id;
 	}
 	public String getFirstName() {
 		return firstName;
