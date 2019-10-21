@@ -4,7 +4,11 @@ import javax.validation.constraints.NotNull;
 
 public class CustomerDTO {
 	
+<<<<<<< HEAD
 	private Long CustomerId;
+=======
+	private int customerId;
+>>>>>>> 70b009d3047eb0c5f6746bf9c30d70776cef5117
 
 	@NotNull
 	private String firstname;
@@ -28,6 +32,7 @@ public class CustomerDTO {
 	private int points;
 
 
+<<<<<<< HEAD
 	public Long getCustomerId() {
 		return CustomerId;
 	}
@@ -35,6 +40,15 @@ public class CustomerDTO {
 
 	public void setCustomerId(Long CustomerId) {
 		this.CustomerId = CustomerId;
+=======
+	public int getCustomerId() {
+		return customerId;
+	}
+
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+>>>>>>> 70b009d3047eb0c5f6746bf9c30d70776cef5117
 	}
 	
 	public String getFirstName() {

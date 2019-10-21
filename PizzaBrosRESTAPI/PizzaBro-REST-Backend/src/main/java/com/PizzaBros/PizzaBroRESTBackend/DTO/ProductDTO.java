@@ -1,38 +1,44 @@
-package com.PizzaBros.model;
+package com.PizzaBros.PizzaBroRESTBackend.DTO;
 
-import java.io.Serializable;
+import javax.validation.constraints.NotNull;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.transaction.Transactional;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import org.springframework.stereotype.Service;
-
-@Entity
-@Table(name ="Pizza")
-public class Pizza implements Serializable {
-	private static final long serialVersionUID = 1L;
+public class ProductDTO {
+	private Long productId;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id");
-	private Long id;
+	@NotNull
+	//private Long id;
 	private String name;
 	private String description;
 	private String image;
+	private String category;
+	
+	@NotNull
 	private Double price;
 	private Integer inventory;
 	private Integer sales;
-	public Long getId() {
-		return id;
+	
+	public Long getProductId() {
+		return productId;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setProductId(Long productId) {
+		this.productId = productId;
 	}
+	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	
+//	public Long getId() {
+//		return id;
+//	}
+//	public void setId(Long id) {
+//		this.id = id;
+//	}
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -73,8 +79,3 @@ public class Pizza implements Serializable {
 	
 	
 }
-
-
-
-
-
