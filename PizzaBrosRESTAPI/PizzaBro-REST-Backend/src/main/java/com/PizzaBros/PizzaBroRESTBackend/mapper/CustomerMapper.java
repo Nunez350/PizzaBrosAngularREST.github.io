@@ -8,7 +8,7 @@ import com.PizzaBros.PizzaBroRESTBackend.model.Customer;
 @Component
 public class CustomerMapper {
 
-	//skrt
+	//skrt2
 	public Customer toEntity(CustomerDTO dto) {
 		Customer customer = new Customer();		
 		customer.setFirstName(dto.getFirstName());
