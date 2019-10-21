@@ -1,5 +1,4 @@
-package com.PizzaBros.model;
-
+package com.PizzaBros.PizzaBroRESTBackend.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -19,8 +18,8 @@ public class Customer implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
-	private Long id;
+	@Column(name = "CustomerId")
+	private Long CustomerId;
 	private String firstName;
 	private String lastName;
 	private String userName;
@@ -28,11 +27,11 @@ public class Customer implements Serializable {
 	private String email;
 	private Integer points;
 	private String address;
-	public Long getId() {
-		return id;
+	public Long getCustomerId() {
+		return CustomerId;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setCustomerId(Long CustomerId) {
+		this.CustomerId = CustomerId;
 	}
 	public String getFirstName() {
 		return firstName;
