@@ -29,7 +29,7 @@ public class OrderLine {
 	
 	private Integer quantity;
 	
-	private Integer productId;
+	//private Integer productId;
 
 	@ManyToOne
 	@JoinColumn(name = "orders_id")
@@ -62,13 +62,13 @@ public class OrderLine {
 		this.quantity = quantity;
 	}
 
-	public Integer getProductId() {
-		return productId;
-	}
-
-	public void setProductId(Integer productId) {
-		this.productId = productId;
-	}
+//	public Integer getProductId() {
+//		return productId;
+//	}
+//
+//	public void setProductId(Integer productId) {
+//		this.productId = productId;
+//	}
 
 	public Order getOrder() {
 		return order;

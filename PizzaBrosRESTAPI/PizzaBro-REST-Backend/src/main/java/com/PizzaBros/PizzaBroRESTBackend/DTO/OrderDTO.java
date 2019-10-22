@@ -20,8 +20,6 @@ public class OrderDTO {
 	private List<ProductSelectionDTO> products;
 	
 	
-	
-	
 	public String getOrderId() {
 		return orderId;
 	}
@@ -129,14 +127,6 @@ public class OrderDTO {
 
 	public void setProducts(List<ProductSelectionDTO> products) {
 		this.products = products;
-	}
-
-
-
-
-	@Override
-	public String toString() {
-		return "OrderDTO [address=" + address + ", products=" + products + ", name=" + name + ", payment=" + payment + "]";
 	}
 	
 
