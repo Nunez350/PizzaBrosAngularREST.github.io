@@ -25,35 +25,31 @@ import com.PizzaBros.PizzaBroRESTBackend.repository.CustomerRepository;
 public class CustomerService {
 
 		@Autowired
-		private CustomerRepository CustomerRepository;
+		private CustomerRepository customerRepository;
 		
 		public List<CustomerDTO> findAll(String category) {
 			List<Customer> findAll = null;
 		
 			if (category != null && !category.isEmpty()) {
-				findAll = CustomerRepository.findAllByCategory(category);
+				findAll = customerRepository.findAllByCategory(category);
 			} else {
 				findAll = customerRepository.findAll();
 			}
-			return findAll.stream().map(p -> customerMapper.toDto(p)).collect(Collectors.toList());
+			return findAll(category).stream().map(p -> customerMapper.toDto(p)).collect(Collectors.toList());
 		}
 		
 		
 		public CustomerDTO findOne(Long id) {
-			Optional<Customer> customerOp = CustomerRepository.findById(id);
+			Optional<Customer> customerOp = customerRepository.findById(id);
 			if (customerOp.isPresent()) {
 				return customerMapper.toDto(customerOp.get());
 			}
 			return null;
 		}
-		public PizzaDTO save(PizzaDTO customer) {
-			Pizza entity = pizzaMapper.toEntity(customer);	
-			Pizza saved = pizzaRepository.save(entity);
-			return pizzaMapper.toDto(saved);
-		}
+		
 		
 		public CustomerDTO update(CustomerDTO customer, Long id) {
-			Optional<Customer> findById = customerRepository.findById(id);
+			Optional<Customer> findById = CustomerRepository.findById(id);
 			if (findById.isPresent()) {
 				Customer c = findById.get();
 				c.setFirstName(customer.getFirstName());

@@ -2,7 +2,13 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\terry\Desktop\PizzaBrosAngularREST.github.io\PizzaBrosRESTAPI"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/ReynaldB/PizzaBro-REST-Backend"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/ReynaldB"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/ReynaldB/PizzaBro-REST-Backend"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBro-REST-Backend"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/spring-boot-rest-service2"/>
+			<item value="/Users/roynunez/Documents/CollaberaJump/FinalProject/spring-boot-rest-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

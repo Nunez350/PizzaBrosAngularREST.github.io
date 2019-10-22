@@ -75,6 +75,10 @@ public class Customer implements Serializable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public int getCustomerId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	
 	

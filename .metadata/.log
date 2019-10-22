@@ -4174,3 +4174,138 @@ java.lang.NumberFormatException: null
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1151)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2019-10-22 14:22:06.834
+!MESSAGE An internal error occurred during: "Periodic workspace save.".
+!STACK 0
+java.lang.NumberFormatException: null
+	at java.base/java.lang.Integer.parseInt(Integer.java:614)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1595)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1271)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1263)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1240)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1151)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-10-22 14:23:50.531 -----------------------------------------------
+eclipse.buildId=4.3.1.201907120711-RELEASE
+java.version=11.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/roynunez/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/roynunez/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-10-22 14:24:30.511
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-22 14:24:30.537
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-22 14:24:31.365
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-22 14:24:31.365
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3472f3ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e557671,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:35.958
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:35.959
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@679f3e12[org.springframework.tooling.boot.ls:1.9.0.201907120625(id=618)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:35.964
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:36.023
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.630
+!MESSAGE Boot LS startup time from start to initialized: 2640ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.653
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.boDGDdJUisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.654
+!MESSAGE subscribing to classpath changes: sts4.classpath.boDGDdJU isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.657
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.659
+!MESSAGE subsribers = {sts4.classpath.boDGDdJU=Send Classpath Notifications(79)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.660
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.675
+!MESSAGE project PizzaBro-REST-Backend ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.676
+!MESSAGE project spring-boot-rest-service ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.676
+!MESSAGE Preparing classpath changed notification PizzaBro-REST-Backend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.676
+!MESSAGE project spring-boot-rest-service2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.677
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.677
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.677
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.boDGDdJU => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.684
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.686
+!MESSAGE buffering callback sts4.classpath.boDGDdJU PizzaBro-REST-Backend false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.687
+!MESSAGE Preparing classpath changed notification spring-boot-rest-service
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.688
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.700
+!MESSAGE classpath=127 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.703
+!MESSAGE buffering callback sts4.classpath.boDGDdJU spring-boot-rest-service false 127
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.703
+!MESSAGE Preparing classpath changed notification spring-boot-rest-service2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.704
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.709
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.712
+!MESSAGE buffering callback sts4.classpath.boDGDdJU spring-boot-rest-service2 false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.712
+!MESSAGE executing callback sts4.classpath.boDGDdJU 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-22 14:24:38.934
+!MESSAGE executing callback sts4.classpath.boDGDdJU SUCCESS [done]
