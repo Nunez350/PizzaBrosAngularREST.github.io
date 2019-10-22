@@ -40,7 +40,11 @@ public class ProductSelectionDTO {
 	}
 	
 	
-	
+	// Added a required default constructor -ra
+	public ProductSelectionDTO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public ProductSelectionDTO(Long productId, String name, Double price,  Integer quantity) {
 		super();
 		this.productId = productId;
