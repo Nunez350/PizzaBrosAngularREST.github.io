@@ -10,7 +10,7 @@ import com.PizzaBros.PizzaBroRESTBackend.DTO.CustomerDTO;
 import com.PizzaBros.PizzaBroRESTBackend.model.Customer;
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
-    List<CustomerDTO> findAllById(Long customerId );
+    List<Customer> findAllById(Long customerId );
     List<Customer> findAll();
     
 }

@@ -20,7 +20,7 @@ public class CustomerMapper {
     
     public CustomerDTO toDto(Customer entity) {
         CustomerDTO customer = new CustomerDTO();
-        customer.setCustomerId(entity.getCustomerId());
+        customer.setCustomerId(entity.getId());
         customer.setFirstName(entity.getFirstName());
         customer.setLastName(entity.getLastName());
         customer.setUserName(entity.getUserName());

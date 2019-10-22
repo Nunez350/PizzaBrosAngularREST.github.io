@@ -34,8 +34,27 @@ public class CustomerService {
 		
 
 		
-		public List<CustomerDTO> findAll(long id) {
-			return customerRepository.findAllById(id);
+//		public List<CustomerDTO> findAll(Long id) {
+//			List<Customer> findAll = null;
+//			
+//			if (id != null && !id.isEmpty()) {
+//				findAll = customerRepository.findAllById(id);
+//			} else {
+//				findAll = customerRepository.findAll();
+//			}
+//			return findAll.stream().map(c -> customerMapper.toDto(c)).collect(Collectors.toList());
+//		}
+//		
+		
+		public List<CustomerDTO> findAll(Long id) {
+			List<Customer> findAll;
+			
+			if (id != null) {
+				findAll = customerRepository.findAllById(id);
+			} else {
+				findAll = customerRepository.findAll();
+			}
+			return findAll.stream().map(c -> customerMapper.toDto(c)).collect(Collectors.toList());
 		}
 		
 		

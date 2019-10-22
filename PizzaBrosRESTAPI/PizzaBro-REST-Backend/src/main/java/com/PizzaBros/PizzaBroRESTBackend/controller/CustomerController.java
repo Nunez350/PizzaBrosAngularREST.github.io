@@ -35,18 +35,13 @@ public class CustomerController {
         return customerService.findAll(customerid);
     }
     
-    /*@GetMapping("/api/customer/{CustomerId}")
-    public ResponseEntity<CustomerDTO> get(@PathVariable String id) {
-        CustomerDTO customer = customerService.findOne(id);
-        return ResponseEntity.ok(customer);
-    }
+   
     
-    
-    @GetMapping("/api/customer/CustomerId/{CustomerId}")
-    public List<CustomerDTO> getAll(@PathVariable String CustomerId) {
-        return customerService.findCustomerId(CustomerId);    
+    @GetMapping("/api/customer/{customerId}")
+    public CustomerDTO getAll(@PathVariable Long customerId) {
+        return customerService.findOne(customerId);
     }
-*/
+
     
     
     @PostMapping("/api/customer")
@@ -60,9 +55,9 @@ public class CustomerController {
         CustomerDTO result = customerService.update(customer, customerid);
         return ResponseEntity.ok().body(result);
     }
-    @DeleteMapping("api/customer/{CustomerId}")
-    public ResponseEntity<Void> delete(@PathVariable Long customerid) {
-        customerService.delete(customerid);
+    @DeleteMapping("api/customer/{customerId}")
+    public ResponseEntity<Void> delete(@PathVariable Long customerId) {
+        customerService.delete(customerId);
         return ResponseEntity.ok().build();
     }
 }

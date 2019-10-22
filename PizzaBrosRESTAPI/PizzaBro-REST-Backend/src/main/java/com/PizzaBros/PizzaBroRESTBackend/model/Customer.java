@@ -27,12 +27,15 @@ public class Customer implements Serializable {
 	private String email;
 	private Integer points;
 	private String address;
+	
 	public Long getId() {
 		return id;
 	}
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -75,10 +78,7 @@ public class Customer implements Serializable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public int getCustomerId() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	
 	
