@@ -112,3 +112,244 @@ org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backen
 2019-10-22 13:43:20,161 [Worker-238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-10-22 13:43:20,161 [Worker-238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-10-22 13:43:20,161 [Worker-238: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:51:41,618 [Worker-249: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.PizzaBros:PizzaBro-REST-Backend:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/pom.xml.
+2019-10-22 13:51:41,826 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:51:41,826 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:51:41,826 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:51:41,827 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:51:41,827 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:51:44,297 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:51:44,297 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 13:51:44,298 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:51:44,299 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:51:44,299 [Worker-249: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:51:49,775 [Worker-245: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:51:49,776 [Worker-245: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:51:49,776 [Worker-245: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:51:49,777 [Worker-245: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:51:50,017 [Worker-241: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.disconnect(ConsoleLineNotifier.java:72) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$CompiledPatternMatchListener.dispose(ConsolePatternMatcher.java:198) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher.disconnect(ConsolePatternMatcher.java:260) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:164) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:52:09,695 [Worker-241: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.PizzaBros:PizzaBro-REST-Backend:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/pom.xml.
+2019-10-22 13:52:09,903 [Worker-241: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/main/java
+2019-10-22 13:52:09,903 [Worker-241: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:52:09,903 [Worker-241: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:52:09,904 [Worker-241: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/test/java
+2019-10-22 13:52:09,963 [Worker-241: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-10-22 13:52:10,653 [Worker-242: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:10,653 [Worker-242: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 13:52:10,654 [Worker-242: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:10,655 [Worker-242: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:10,655 [Worker-242: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:52:31,173 [Worker-241: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-10-22 13:52:31,436 [Worker-241: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.PizzaBros:PizzaBro-REST-Backend:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/pom.xml.
+2019-10-22 13:52:31,630 [Worker-241: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.test:spring-boot-rest-service:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/spring-boot-rest-service/pom.xml.
+2019-10-22 13:52:31,798 [Worker-241: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.test:spring-boot-rest-service2:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/spring-boot-rest-service2/pom.xml.
+2019-10-22 13:52:32,052 [Worker-241: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/main/java
+2019-10-22 13:52:32,052 [Worker-241: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:52:32,052 [Worker-241: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:52:32,052 [Worker-241: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/test/java
+2019-10-22 13:52:32,138 [Worker-241: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-10-22 13:52:32,536 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:32,537 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 13:52:32,546 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:32,547 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:32,547 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:52:32,941 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:32,942 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:32,942 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:32,943 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:32,943 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:33,131 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:33,131 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:33,131 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:52:33,132 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:52:33,132 [Worker-241: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:57:11,201 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:57:11,201 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:57:11,201 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:57:11,202 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:57:11,202 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:57:36,037 [Worker-255: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:57:36,037 [Worker-255: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:57:36,037 [Worker-255: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:57:36,038 [Worker-255: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:57:36,038 [Worker-255: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 13:58:17,311 [Worker-258: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:58:17,312 [Worker-258: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:58:17,313 [Worker-258: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:58:17,314 [Worker-258: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:116) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:58:17,543 [Worker-251: Match Job] ERROR o.e.m.i.l.MavenConsoleLineTracker - Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+org.eclipse.debug.core.DebugException: Launch configuration PizzaBro-REST-Backend - PizzaBroRestBackendApplication at file:/Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/.metadata/.plugins/org.eclipse.debug.core/.launches/PizzaBro-REST-Backend%20-%20PizzaBroRestBackendApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:886) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1383) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:490) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:645) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:142) ~[na:na]
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:85) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:124) ~[na:na]
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.disconnect(ConsoleLineNotifier.java:72) ~[na:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$CompiledPatternMatchListener.dispose(ConsolePatternMatcher.java:198) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher.disconnect(ConsolePatternMatcher.java:260) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:164) ~[org.eclipse.ui.console_3.8.500.v20190514-0743.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-10-22 13:58:36,332 [Worker-257: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.PizzaBros:PizzaBro-REST-Backend:0.0.1-SNAPSHOT @ /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/pom.xml.
+2019-10-22 13:58:36,505 [Worker-257: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/main/java
+2019-10-22 13:58:36,506 [Worker-257: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:58:36,506 [Worker-257: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PizzaBro-REST-Backend/src/main/resources
+2019-10-22 13:58:36,506 [Worker-257: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PizzaBro-REST-Backend/src/test/java
+2019-10-22 13:58:36,561 [Worker-257: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-10-22 13:58:37,118 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:58:37,118 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 13:58:37,119 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 13:58:37,120 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 13:58:37,120 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:06:39,499 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:06:39,499 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:06:39,500 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:06:39,501 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:06:39,501 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:11:59,475 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:11:59,476 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:11:59,477 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:11:59,478 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:11:59,479 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:13:33,775 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:13:33,776 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:13:33,776 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:13:33,777 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:13:33,777 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:14:04,756 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:04,756 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:14:04,757 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:14:04,758 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:04,758 [Worker-263: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:14:42,857 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:42,857 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:14:42,858 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:14:42,859 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:42,859 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:14:55,623 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:55,623 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:14:55,624 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:14:55,624 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:14:55,624 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:15:49,340 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:15:49,341 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:15:49,341 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:15:49,342 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:15:49,342 [Worker-251: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:17:06,942 [Worker-260: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:06,943 [Worker-260: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:17:06,943 [Worker-260: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:17:06,944 [Worker-260: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:06,945 [Worker-260: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:17:15,942 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:15,943 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:17:15,943 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:17:15,944 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:15,944 [Worker-257: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
+2019-10-22 14:17:17,843 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:17,844 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-22 14:17:17,844 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-22 14:17:17,845 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-22 14:17:17,845 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/roynunez/Documents/CollaberaJump/FinalProject/PizzaBrosWebApplication/PizzaBrosRESTAPI/PizzaBro-REST-Backend/src/test/resources
