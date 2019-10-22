@@ -29,10 +29,10 @@ public class CustomerController {
     }
     
     @GetMapping("/api/customer")
-    public List<CustomerDTO> getAll(@RequestParam(name = "customerid", required = false) String customerid,
+    public List<CustomerDTO> getAll(@RequestParam(name = "customerid", required = false) Long customerid,
     @RequestParam(name = "related", required = false) boolean related,
     @RequestParam(name = "metadata", required = false) boolean metadata) {
-        return customerService.findAll(customerid);    
+        return customerService.findAll(customerid);
     }
     
     /*@GetMapping("/api/customer/{CustomerId}")
@@ -56,12 +56,12 @@ public class CustomerController {
     }
     
     @PutMapping("/api/customer/{customerid}")
-    public ResponseEntity<CustomerDTO> updateJob(@PathVariable String customerid, @RequestBody @Valid CustomerDTO customer) {
+    public ResponseEntity<CustomerDTO> updateJob(@PathVariable Long customerid, @RequestBody @Valid CustomerDTO customer) {
         CustomerDTO result = customerService.update(customer, customerid);
         return ResponseEntity.ok().body(result);
     }
     @DeleteMapping("api/customer/{CustomerId}")
-    public ResponseEntity<Void> delete(@PathVariable String customerid) {
+    public ResponseEntity<Void> delete(@PathVariable Long customerid) {
         customerService.delete(customerid);
         return ResponseEntity.ok().build();
     }
