@@ -7,7 +7,7 @@ import com.PizzaBros.PizzaBroRESTBackend.model.Customer;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, String>{
-	List<Customer> findAllById(String CustomerId );
+	List<Customer> findAllById(String customerId );
 
 	List<Customer> findAll();
 

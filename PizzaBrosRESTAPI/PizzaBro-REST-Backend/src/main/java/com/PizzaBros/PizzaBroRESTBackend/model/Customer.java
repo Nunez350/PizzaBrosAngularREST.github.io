@@ -19,37 +19,37 @@ public class Customer implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "customer_id")
-	private Long id;
-	private String firstName;
-	private String lastName;
-	private String userName;
+	private Long customerid;
+	private String firstname;
+	private String lastname;
+	private String username;
 	private String password;
 	private String email;
 	private Integer points;
 	private String address;
 	public Long getCustomerId() {
-		return id;
+		return customerid;
 	}
-	public void setCustomerId(Long id) {
-		this.id = id;
+	public void setCustomerId(Long customerid) {
+		this.customerid = customerid;
 	}
 	public String getFirstName() {
-		return firstName;
+		return firstname;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstName(String firstname) {
+		this.firstname = firstname;
 	}
 	public String getLastName() {
-		return lastName;
+		return lastname;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastName(String lastname) {
+		this.lastname = lastname;
 	}
 	public String getUserName() {
-		return userName;
+		return username;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 	public String getPassword() {
 		return password;

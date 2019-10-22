@@ -39,11 +39,11 @@ public class CustomerService {
 		return null;
 	}*/
 
-	public List<CustomerDTO> findAll(String id) {
+	public List<CustomerDTO> findAll(String customerid) {
 		List<Customer> findAll = null;
 		
-		if (id != null && !id.isEmpty()) {
-			findAll = customerRepository.findAllById(id);
+		if (customerid != null && !customerid.isEmpty()) {
+			findAll = customerRepository.findAllById(customerid);
 		} else {
 			findAll = customerRepository.findAll();
 		}
@@ -55,8 +55,8 @@ public class CustomerService {
 			return customerMapper.toDto(saved);
 		}
 		
-		public CustomerDTO update(CustomerDTO customer, String CustomerId) {
-			Optional<Customer> findById = customerRepository.findById(CustomerId);
+		public CustomerDTO update(CustomerDTO customer, String customerid) {
+			Optional<Customer> findById = customerRepository.findById(customerid);
 			if (findById.isPresent()) {
 				Customer c = findById.get();
 				c.setFirstName(customer.getFirstName());
@@ -76,8 +76,8 @@ public class CustomerService {
 		
 		
 		
-		public void delete(String CustomerId) {
-			customerRepository.deleteById(CustomerId);
+		public void delete(String customerid) {
+			customerRepository.deleteById(customerid);
 		}
 
 

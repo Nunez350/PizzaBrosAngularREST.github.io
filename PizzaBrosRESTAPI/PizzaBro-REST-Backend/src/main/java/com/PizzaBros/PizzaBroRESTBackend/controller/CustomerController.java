@@ -25,7 +25,6 @@ import com.PizzaBros.PizzaBroRESTBackend.services.CustomerService;
 
 
 @RestController
-//@RequestMapping("/api")
 public class CustomerController {
 	private final CustomerService customerService;
 	@Autowired
@@ -34,10 +33,10 @@ public class CustomerController {
 	}
 	
 	@GetMapping("/api/customer")
-	public List<CustomerDTO> getAll(@RequestParam(name = "CustomerId", required = false) String CustomerId,
+	public List<CustomerDTO> getAll(@RequestParam(name = "customerid", required = false) String customerid,
 	@RequestParam(name = "related", required = false) boolean related, 
 	@RequestParam(name = "metadata", required = false) boolean metadata) {
-		return customerService.findAll(CustomerId);	
+		return customerService.findAll(customerid);	
 	}
 	
 	/*@GetMapping("/api/customer/{CustomerId}")
@@ -60,15 +59,15 @@ public class CustomerController {
 		return ResponseEntity.created(new URI("/api/customer/" + result.getCustomerId())).body(result);
 	}
 	
-	@PutMapping("/api/customer/{CustomerId}")
-	public ResponseEntity<CustomerDTO> updateJob(@PathVariable String id, @RequestBody @Valid CustomerDTO customer) {
-		CustomerDTO result = customerService.update(customer, id);
+	@PutMapping("/api/customer/{customerid}")
+	public ResponseEntity<CustomerDTO> updateJob(@PathVariable String customerid, @RequestBody @Valid CustomerDTO customer) {
+		CustomerDTO result = customerService.update(customer, customerid);
 		return ResponseEntity.ok().body(result);
 	}
 
 	@DeleteMapping("api/customer/{CustomerId}")
-	public ResponseEntity<Void> delete(@PathVariable String id) {
-		customerService.delete(id);
+	public ResponseEntity<Void> delete(@PathVariable String customerid) {
+		customerService.delete(customerid);
 		return ResponseEntity.ok().build();
 	}
 }
