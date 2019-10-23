@@ -11,10 +11,11 @@ import { AdminModule } from './admin/admin.module';
 import { ProductDetailComponent } from './structure/productDetail.component';
 import { ProductTableComponent } from './structure/productTable.component';
 import { CategoryFilterComponent } from './structure/categoryFilter.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent
+    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, HomeComponent
   ],
   imports: [
     RoutingConfig,

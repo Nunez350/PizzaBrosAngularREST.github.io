@@ -9,6 +9,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ProductAdminComponent } from './admin/productAdmin.component';
 import { OrderAdminComponent } from './admin/orderAdmin.component';
 import { OverviewComponent } from './admin/overview.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -27,7 +28,7 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutDetailsComponent },
   { path: 'cart', component: CartDetailComponent },
   { path: 'store', component: ProductSelectionComponent },
-  { path: '', component: ProductSelectionComponent }
+  { path: '', component: HomeComponent }
 ];
 
 export const RoutingConfig = RouterModule.forRoot(routes);
