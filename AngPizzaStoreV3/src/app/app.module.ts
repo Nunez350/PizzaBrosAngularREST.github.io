@@ -12,10 +12,11 @@ import { ProductDetailComponent } from './structure/productDetail.component';
 import { ProductTableComponent } from './structure/productTable.component';
 import { CategoryFilterComponent } from './structure/categoryFilter.component';
 import { HomeComponent } from './home/home.component';
+import { SignInComponent } from './SignIn/signIn.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, HomeComponent
+    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, SignInComponent, HomeComponent
   ],
   imports: [
     RoutingConfig,
