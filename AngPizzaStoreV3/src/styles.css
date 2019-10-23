@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.btn{
+  background: rgb(122, 8, 8);
+}
+
+.btn-outline-primary{
+  background: red;
+}
+
+body{
+  background-color: rgb(91, 238, 91);
+}
