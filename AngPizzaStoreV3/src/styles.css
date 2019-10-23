@@ -268,7 +268,11 @@
     
 }
 #imagebg{
+<<<<<<< HEAD
     background: url("/images/BrickPizza.png")   
+=======
+    background: url("../images/BrickPizza.png")   
+>>>>>>> parent of 3aebc86c... images
 }
 .popup-messages .direct-chat-msg {
     margin-bottom: 10px;
