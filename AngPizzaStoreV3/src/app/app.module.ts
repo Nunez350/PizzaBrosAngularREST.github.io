@@ -16,7 +16,7 @@ import { SignInComponent } from './SignIn/signIn.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, SignInComponent, HomeComponent
+    HomeComponent, AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, SignInComponent, HomeComponent
   ],
   imports: [
     RoutingConfig,
