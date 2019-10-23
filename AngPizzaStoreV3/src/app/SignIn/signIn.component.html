@@ -14,17 +14,17 @@
 <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">-->
 <link href="styles.css" rel="stylesheet">
 
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	type="text/css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	crossorigin="anonymous">
 </head>
-
 <body>
 
 	<div id="imagebg">
 
-		<!-- our audio file-->
+        	<!-- our audio file-->
 		<!--<audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>-->
 		<!--navigation feature-->
 		<div class="imgcontainer">
@@ -51,11 +51,11 @@
 					type="checkbox" checked="checked" name="remember"> Remember
 					me
 				</label>
-            </form>
-            			
+			</form>
+				
 		</div>
-	</div>
-	<div class="container1" style="background-color: #f1f1f1">
+    </div>
+    <div class="container1" style="background-color: #f1f1f1">
 		<button type="button" class="cancelbtn">Cancel</button>
 		<!--span tag is used for identifying inline elements in the document-->
 		<span class="psw">Forgot <a href="#">password?</a></span>
@@ -76,16 +76,15 @@
 			</div>
 			<hr>
 		</div>
-	</div>
-	<!-- chatbox dialogue  with java script-->
+    </div>
+    <!-- chatbox dialogue  with java script-->
 	<div class="popup-box chat-popup" id="qnimate">
 		<div class="popup-head">
 			<div class="popup-head-left pull-left">
 				<img src="../images/PizzaImage.png" alt="iamgurdeeposahan">
 				Pizza Brothers
-            </div>
-            
-            <div class="popup-head-right pull-right">
+			</div>
+			<div class="popup-head-right pull-right">
 				<div class="btn-group">
 					<button class="chat-header-button" data-toggle="dropdown"
 						type="button" aria-expanded="false">
@@ -102,10 +101,10 @@
 					<i class="glyphicon glyphicon-off"></i>
 				</button>
 			</div>
-        </div>
-        
+		</div>
 
-		<div class="popup-messages">
+
+        <div class="popup-messages">
 			<!--chat box content-->
 			<div class="direct-chat-messages">
 				<!-- time stamp-->
@@ -143,11 +142,11 @@
 					<div class="direct-chat-info clearfix">
 						<span class="direct-chat-timestamp pull-left">3.37 PM</span>
 
-                    </div>
-                    
+					</div>
+					​
 
-                    </div>
-				​
+                </div>
+                
 
 				<!-- /.direct-chat-msg
                         
@@ -179,15 +178,13 @@
 
 						<!--<span class="direct-chat-reply-name">Customer</span>-->
 					</div>
-                    <!-- /.direct-chat-text -->
-                    
-
-                    </div>
+					<!-- /.direct-chat-text -->
+				</div>
 				<!-- /.direct-chat-msg -->
 			</div>
-		</div>
-
-		<div class="popup-messages-footer">
+        </div>
+        
+        <div class="popup-messages-footer">
 			<input id="status_message" onkeypress="captureEnter()"
 				placeholder="Type a message..." rows="10" cols="40" name="message">
 			<!--<textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"onkeypress="captureEnter();" ></textarea>-->
@@ -201,33 +198,5 @@
 				</button>
 			</div>
 		</div>
-	</div>
-
-	<script type="text/javascript">
-		$(function() {
-			$("#addClass").click(function() {
-				$('#qnimate').addClass('popup-box-on');
-			});
-			$("#removeClass").click(function() {
-				$('#qnimate').removeClass('popup-box-on');
-			});
-		})
-    </script>
+    </div>
     
-    <script type="text/javascript">
-		function callAPI(x) {
-			$.ajax({
-				url : "http://localhost:8080/login",
-				type : 'POST',
-				contentType : 'application/json',
-				//    data: {
-				//            username: user,
-				//            userPassword: password
-				//        },
-				data : $('#frm').serialize(),
-				success : function(result) {
-					console.log(result);
-				}
-			});
-		}
-	</script>
