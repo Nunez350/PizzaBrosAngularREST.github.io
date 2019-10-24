@@ -11,6 +11,7 @@ import { OrderAdminComponent } from './admin/orderAdmin.component';
 import { OverviewComponent } from './admin/overview.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './SignIn/signIn.component';
+import { AboutUsComponent } from './aboutUs/aboutus.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'cart', component: CartDetailComponent },
   { path: 'store', component: ProductSelectionComponent },
   { path: '', component: HomeComponent },
-  { path: 'signIn', component: SignInComponent }
+  { path: 'signIn', component: SignInComponent },
+  { path: 'aboutUs', component: AboutUsComponent }
 ];
 
 export const RoutingConfig = RouterModule.forRoot(routes);

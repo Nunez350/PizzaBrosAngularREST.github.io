@@ -8,6 +8,7 @@ import { Product } from '../models/product.model';
 })
 export class ProductEditorComponent {
   constructor(private repo: Repository) { }
+  showNavbar = false;
   get product(): Product {
     return this.repo.product;
   }
