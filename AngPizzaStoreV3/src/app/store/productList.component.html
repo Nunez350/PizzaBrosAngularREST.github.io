@@ -25,7 +25,7 @@
 
     <div class="container">
         <div *ngFor="let product of products; let i = index">
-        <div class="row" *ngIf = "(i > 0 || i == 3) && i > 3">
+        <div class="row" >
             <div class="col-sm-4" >
                 <span class="h4">
                     {{i}}
@@ -45,25 +45,6 @@
             </div>
         </div>
 
-        <div class="row" *ngIf = "i > 3 && i !=3">
-            <div class="col-sm-4" >
-                <span class="h4">
-                    {{i}}
-                    <img src="{{product.image}}" alt="[Image Missing]" width="70px" />{{product.name}}
-                </span>
-                <div class = "align-bottom">
-                    <span class="float-right badge badge-pill badge-primary">
-                    {{product.price | currency:"USD"}}
-                </span>
-
-                <span>{{product.description}}</span>
-                <button class=" btn btn-sm btn-success" (click)="addToCart(product)">
-                                Add to Cart
-                </button>
-                </div>
-                
-            </div>
-        </div>
 
        
 
