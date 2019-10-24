@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CartSummaryComponent } from '../store/cartSummary.component';
+
 
 @Component({
     selector: 'app-navbar',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
+
+  cart: CartSummaryComponent;
 
 }
