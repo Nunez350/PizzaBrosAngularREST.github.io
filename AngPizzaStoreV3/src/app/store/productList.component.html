@@ -28,17 +28,31 @@
         <div class="row" >
             <div class="col-sm-4" >
                 <span class="h4">
+<<<<<<< HEAD
                     <img src="{{product.image}}" alt="[Image Missing]" width="70px" />{{product.name}}
+=======
+                    {{i}}
+                    <img src="{{product.image}}" class="rounded-circle" alt="[Image Missing]" width="70" height=" 80" />
+>>>>>>> a03448fe8827acef0fad649473394a01a06dce71
                 </span>
                 <div class = "align-bottom">
-                    <span class="float-right badge badge-pill badge-primary">
+                    {{product.name}}
+                    <span class="float-right badge badge-pill badge-primary ">
                     {{product.price | currency:"USD"}}
                 </span>
 
+<<<<<<< HEAD
                 <span>{{product.description}}</span>
                 <button class="align-bottom btn btn-sm btn-success" (click)="addToCart(product)">
+=======
+                <span class = "align-bottom border " >{{product.description}}</span>
+                <div class = "align-bottom"> 
+                    <button class=" btn btn-sm btn-success" (click)="addToCart(product)">
+>>>>>>> a03448fe8827acef0fad649473394a01a06dce71
                                 Add to Cart
-                </button>
+                    </button>
+                </div>
+               
                 </div>
 
             </div>
