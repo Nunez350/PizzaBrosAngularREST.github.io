@@ -11,10 +11,11 @@ import { AdminModule } from './admin/admin.module';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './SignIn/signIn.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutUsComponent } from './aboutUs/aboutus.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SignInComponent, HomeComponent, NavbarComponent
+    AppComponent, SignInComponent, HomeComponent, NavbarComponent, AboutUsComponent
   ],
   imports: [
     RoutingConfig,

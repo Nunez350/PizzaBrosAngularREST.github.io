@@ -8,6 +8,7 @@ import { Product } from '../models/product.model';
 export class ProductAdminComponent {
   constructor(private repo: Repository) { }
   tableMode = true;
+  showNavbar = false;
   get product(): Product {
     return this.repo.product;
   }

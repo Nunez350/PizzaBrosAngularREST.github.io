@@ -11,5 +11,6 @@ export class AdminComponent {
       repo.filter.related = true;
       this.repo.getProducts();
       this.repo.getOrders();
+      const showNavbar = false;
     }
 }
