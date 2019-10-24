@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 .btn{
+  color: aliceblue;
   background: rgb(122, 8, 8);
 }
 
 .btn-outline-primary{
-  background: red;
+  background: rgb(122, 8, 8);
 }
 
 body{
@@ -14,3 +15,14 @@ body{
 .nav{
   background-color: gray;
 }
+
+
+.badge-primary {
+  background-color: firebrick;
+}
+
+.bg {
+  background-color: rgb(122, 8, 8);
+}
+
+

@@ -1,7 +1,7 @@
 <div *ngIf="products?.length > 0; else nodata">
     <!--
     <div *ngFor="let product of products" class="card card-outline-primary m-1"> -->
-        
+
 
 
         <!--
@@ -23,13 +23,22 @@
 
 
 
+<<<<<<< HEAD
     <div class="container-fluid">
         <div *ngFor="let product of products; let i = index">
+=======
+    <div class="container">
+        <div *ngFor="let product of products;">
+>>>>>>> 1df562bf3bc5ef0d1e2439fcc9b5559acd67de5c
         <div class="row" >
             <div class="col-sm" >
                 <span class="h4">
+<<<<<<< HEAD
+                    <img src="{{product.image}}" alt="[Image Missing]" width="70px" />{{product.name}}
+=======
                     {{i}}
                     <img src="{{product.image}}" class="rounded-circle" alt="[Image Missing]" width="70" height=" 80" />
+>>>>>>> a03448fe8827acef0fad649473394a01a06dce71
                 </span>
                 <div class = "align-bottom">
                     {{product.name}}
@@ -37,20 +46,25 @@
                     {{product.price | currency:"USD"}}
                 </span>
 
+<<<<<<< HEAD
+                <span>{{product.description}}</span>
+                <button class="align-bottom btn btn-sm btn-success" (click)="addToCart(product)">
+=======
                 <span class = "align-bottom border " >{{product.description}}</span>
                 <div class = "align-bottom"> 
                     <button class=" btn btn-sm btn-success" (click)="addToCart(product)">
+>>>>>>> a03448fe8827acef0fad649473394a01a06dce71
                                 Add to Cart
                     </button>
                 </div>
                
                 </div>
-                
+
             </div>
         </div>
 
 
-       
+
 
             </div>
         </div>
