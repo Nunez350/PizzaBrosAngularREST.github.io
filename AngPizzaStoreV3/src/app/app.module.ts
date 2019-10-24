@@ -8,15 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModelModule } from './models/model.module';
 import { StoreModule } from './store/store.module';
 import { AdminModule } from './admin/admin.module';
-import { ProductDetailComponent } from './structure/productDetail.component';
-import { ProductTableComponent } from './structure/productTable.component';
-import { CategoryFilterComponent } from './structure/categoryFilter.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './SignIn/signIn.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ProductDetailComponent, ProductTableComponent, CategoryFilterComponent, SignInComponent, HomeComponent
+    AppComponent, SignInComponent, HomeComponent, NavbarComponent
   ],
   imports: [
     RoutingConfig,
