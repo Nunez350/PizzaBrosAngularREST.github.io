@@ -19,6 +19,6 @@ import { CategoryFilterComponent } from './categoryFilter.component';
         CartDetailComponent, CheckoutDetailsComponent, CheckoutPaymentComponent,
         CheckoutSummaryComponent, OrderConfirmationComponent],
     imports: [BrowserModule, RouterModule, FormsModule],
-    exports: [ProductSelectionComponent]
+    exports: [ProductSelectionComponent, CartSummaryComponent]
 })
 export class StoreModule { }
