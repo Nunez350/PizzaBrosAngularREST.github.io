@@ -1,0 +1,84 @@
+#imagebg{
+    background: url("../../assets/images/BrickPizza.png")   
+}
+
+
+.signUpImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+*{margin: 0; padding: 0;}
+.form-wrap{ width: 320px; background: #FF0000; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+h1{
+    text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;
+}
+input{
+    width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+/*input bar*/
+input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
+input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
+
+body {
+    background-color: #383838;
+}
+nav {
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    background-color: black;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+    nav a{
+    color: white;
+    text-align: center;
+    padding: 21px 19px;
+    text-decoration: none;
+    float: left;
+    border-right:2px solid #bbb;
+
+    }
+
+a:hover:not(.active) {
+    background-color: #FFED18;
+  }
+.active {
+    background-color: #FF0D00;
+  }
+  
+  .toTheRight{
+    float: right;
+    width:  35px;
+    height: 35px;
+    position: relative;
+    right: 50px;
+}
+
+
+  
+h1 {
+    border-style: solid;
+    border-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+    background-color:red;
+    font-size: 60px;
+}
+*{margin: 0; padding: 0;}
+.form-wrap{ width: 320px; background: #FF0000; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+h1{
+    text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;
+}
+input{
+    width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+/*input bar*/
+input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
+input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
+::placeholder{color: #fff;}

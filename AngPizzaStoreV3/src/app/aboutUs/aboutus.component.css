@@ -39,3 +39,13 @@ a:hover:not(.active) {
 .active {
   background-color: #FF0D00 !important;
 }
+
+h1 {
+  font-family: fantasy !important;
+  color: #FF0D00 !important;
+  outline-style: solid !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}

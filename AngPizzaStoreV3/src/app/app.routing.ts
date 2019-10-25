@@ -10,7 +10,7 @@ import { ProductAdminComponent } from './admin/productAdmin.component';
 import { OrderAdminComponent } from './admin/orderAdmin.component';
 import { OverviewComponent } from './admin/overview.component';
 import { HomeComponent } from './home/home.component';
-import { SignInComponent } from './SignIn/signIn.component';
+import { LogInComponent } from './LogIn/LogIn.component';
 import { AboutUsComponent } from './aboutUs/aboutus.component';
 import { CustomerComponent } from './customer/customer.component';
 
@@ -33,11 +33,16 @@ const routes: Routes = [
   { path: 'cart', component: CartDetailComponent },
   { path: 'store', component: ProductSelectionComponent },
   { path: '', component: HomeComponent },
+<<<<<<< HEAD
   { path: 'signIn', component: SignInComponent },
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'customer', component: CustomerComponent }
 
 
+=======
+  { path: 'LogIn', component: LogInComponent },
+  { path: 'aboutUs', component: AboutUsComponent }
+>>>>>>> ca10c8de28874fc5f12533a5ea86fa3eb89b378a
 ];
 
 export const RoutingConfig = RouterModule.forRoot(routes);

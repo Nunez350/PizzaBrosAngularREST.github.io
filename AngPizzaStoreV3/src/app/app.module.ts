@@ -9,14 +9,18 @@ import { ModelModule } from './models/model.module';
 import { StoreModule } from './store/store.module';
 import { AdminModule } from './admin/admin.module';
 import { HomeComponent } from './home/home.component';
-import { SignInComponent } from './SignIn/signIn.component';
+import { LogInComponent } from './LogIn/LogIn.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutUsComponent } from './aboutUs/aboutus.component';
 import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
+<<<<<<< HEAD
     AppComponent, SignInComponent, HomeComponent, NavbarComponent, AboutUsComponent, CustomerComponent
+=======
+    AppComponent, LogInComponent, HomeComponent, NavbarComponent, AboutUsComponent
+>>>>>>> ca10c8de28874fc5f12533a5ea86fa3eb89b378a
   ],
   imports: [
     RoutingConfig,
