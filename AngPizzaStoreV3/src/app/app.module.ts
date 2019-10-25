@@ -16,11 +16,7 @@ import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
-    AppComponent, SignInComponent, HomeComponent, NavbarComponent, AboutUsComponent, CustomerComponent
-=======
-    AppComponent, LogInComponent, HomeComponent, NavbarComponent, AboutUsComponent
->>>>>>> ca10c8de28874fc5f12533a5ea86fa3eb89b378a
+    AppComponent, LogInComponent, HomeComponent, NavbarComponent, AboutUsComponent, CustomerComponent
   ],
   imports: [
     RoutingConfig,

@@ -34,7 +34,7 @@ b {
 }
 
 a:hover:not(.active) {
-  background-color: #FFED18 !important;
+  background-color: goldenrod !important;
 }
 .active {
   background-color: #FF0D00 !important;

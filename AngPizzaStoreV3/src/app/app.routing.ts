@@ -33,16 +33,9 @@ const routes: Routes = [
   { path: 'cart', component: CartDetailComponent },
   { path: 'store', component: ProductSelectionComponent },
   { path: '', component: HomeComponent },
-<<<<<<< HEAD
-  { path: 'signIn', component: SignInComponent },
   { path: 'aboutUs', component: AboutUsComponent },
-  { path: 'customer', component: CustomerComponent }
-
-
-=======
-  { path: 'LogIn', component: LogInComponent },
-  { path: 'aboutUs', component: AboutUsComponent }
->>>>>>> ca10c8de28874fc5f12533a5ea86fa3eb89b378a
+  { path: 'customer', component: CustomerComponent },
+  { path: 'LogIn', component: LogInComponent }
 ];
 
 export const RoutingConfig = RouterModule.forRoot(routes);
