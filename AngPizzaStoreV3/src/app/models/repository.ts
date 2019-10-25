@@ -25,6 +25,7 @@ export class Repository {
   products: Product[];
   categories: string[] = [];
   orders: Order[] = [];
+  customer: Customer;
 
   constructor(private http: HttpClient) {
     this.filter.related = true;
