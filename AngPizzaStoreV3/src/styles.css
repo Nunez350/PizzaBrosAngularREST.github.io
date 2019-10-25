@@ -25,6 +25,7 @@ body{
   background-color: rgb(122, 8, 8);
 }
 
+
 a:hover:not(.active) {
     background-color: #FFED18;
   }
@@ -49,4 +50,13 @@ h1 {
     background-color:red;
     font-size: 60px;
 }
+=======
+.bg2 {
+  background-color: lightslategrey;
+}
+
+.textcolor {
+  color: aliceblue;
+}
+
 
