@@ -8,7 +8,6 @@ import { Repository } from '../models/repository';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent {
-  
   constructor(private repo: Repository) { }
   showNavbar = false;
   get customer(): Customer {
