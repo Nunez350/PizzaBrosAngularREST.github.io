@@ -25,4 +25,28 @@ body{
   background-color: rgb(122, 8, 8);
 }
 
+a:hover:not(.active) {
+    background-color: #FFED18;
+  }
+.active {
+    background-color: #FF0D00;
+  }
+  
+  .toTheRight{
+    float: right;
+    width:  35px;
+    height: 35px;
+    position: relative;
+    right: 50px;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+    background-color:red;
+    font-size: 60px;
+}
 
