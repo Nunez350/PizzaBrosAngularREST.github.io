@@ -9,8 +9,9 @@
 
 
 .btn{
-  color: aliceblue;
-  background: rgb(122, 8, 8);
+  color: white;
+  background: #FF0400;
+  font-size: 21px;
 }
 
 .btn-outline-primary{
@@ -18,7 +19,7 @@
 }
 
 body{
-  background-color: rgb(91, 238, 91);
+  background-color: #68FF93;
 }
 
 .nav{
@@ -69,10 +70,10 @@ a:hover:not(.active) {
   background-color: lightslategrey;
 }
 
-.textcolor {
-  color: aliceblue;
+.textcolor{
+  color: #008000 !important;
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .border {
