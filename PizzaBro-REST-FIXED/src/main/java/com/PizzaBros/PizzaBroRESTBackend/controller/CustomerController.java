@@ -71,6 +71,7 @@ public class CustomerController {
    @PutMapping("/api/customer/{customerid}")
    public ResponseEntity<CustomerDTO> updateJob(@PathVariable Long customerid, @RequestBody @Valid CustomerDTO customer) {
        CustomerDTO result = customerService.update(customer, customerid);
+       
        return ResponseEntity.ok().body(result);
    }
    
@@ -102,6 +103,24 @@ public class CustomerController {
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
 		return ResponseEntity.ok(userDetails);
 	}
+	
+
+	@PutMapping("/update")
+	public ResponseEntity<UserDetails> update(@RequestBody Customer cust) {
+		UserDetails userDetails = userDetailsService.loadUserByUsername(cust.getUsername());
+		//System.out.println(userDetails);
+		//System.out.println("hello");
+        UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, cust.getPassword());
+        authenticationManager.authenticate(usernamePasswordAuthenticationToken);
+		return ResponseEntity.ok(userDetails);
+	}
+	
+	
+//	 public ResponseEntity<CustomerDTO> updateJob(@PathVariable Long customerid, @RequestBody @Valid CustomerDTO customer) {
+//	       CustomerDTO result = customerService.update(customer, customerid);
+//	       return ResponseEntity.ok().body(result);
+//	   }
+	
 	
 //	@GetMapping("/login12")
 //	public String login12(Model model, String error, String logout) {
