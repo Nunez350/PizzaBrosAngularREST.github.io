@@ -1,0 +1,24 @@
+.btn.btn-lg.btn-primary.btn-block{
+background-color: red ;
+	
+}
+
+
+
+.username{
+	xolor:red;
+}
+
+button{
+	color:blue !important;
+}
+
+submit{
+	color:red !important;
+}
+
+
+input[type=text] {
+   border: 2px solid red;
+  border-radius: 4px;
+}
