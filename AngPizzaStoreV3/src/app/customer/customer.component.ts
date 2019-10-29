@@ -9,7 +9,7 @@ import { Repository } from '../models/repository';
 })
 export class CustomerComponent {
   constructor(private repo: Repository) { }
-  showNavbar = false;
+
   get customer(): Customer {
     return this.repo.customer;
   }

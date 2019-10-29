@@ -17,13 +17,10 @@
 				class="signUpImage" style="width: 600px; height: 350px;">
         </div>
         <div class="container" align="center">
-            <form method="POST" action="${contextPath}/login" class="form-signin">
                 <label for="username" style="background-color: #FFED18"><b>Username</b></label>
-                </form>
-
-                <input type="text" placeholder="Enter Username" name="username" required>
+                <input type="text" placeholder="Username" name="username" [(ngModel)]="customer.username">
                     <label for="password" style="background-color: #FFED18"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required>
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="customer.password">
                    <!--button tag used to create clickable buttons on the web page-->
             <button type="submit">Login</button>
             <label style= "background-color: #FFED18" >
@@ -35,7 +32,7 @@
             <!--span tag is used for identifying inline elements in the document-->
             <span class="psw">Forgot <a href="#">password?</a></span>
             <!-- paragraph tag-->
-            <p>Not a member yet? Sign up for points and rewards?<a href="SignUpForm.html">Sign up now!</a> ?</p>
+            <p>Not a member yet? Sign up for points and rewards?<a>Sign up now!</a>?</p>
         </div>
        <!-- </form>-->
 

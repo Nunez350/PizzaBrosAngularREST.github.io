@@ -3,7 +3,7 @@
         All Categories
     </button>
     <button *ngFor="let category of categories"
-            class="btn btn-outline-primary btn-block"
+            class="text btn btn-outline-primary btn-block"
             [class.active]="currentCategory == category"
         (click)="setCurrentCategory(category)">
         {{category}}

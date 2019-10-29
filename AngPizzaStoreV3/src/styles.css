@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
+}
+
+
+
 .btn{
   color: aliceblue;
   background: rgb(122, 8, 8);
@@ -14,6 +23,11 @@ body{
 
 .nav{
   background-color: gray;
+}
+
+.navbar-nav > li{
+  padding-left:50px;
+  padding-right:50px;
 }
 
 
@@ -57,8 +71,14 @@ a:hover:not(.active) {
 
 .textcolor {
   color: aliceblue;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
 }
 
 .border {
   border-color: black !important;
+}
+
+.text {
+  font-family: 'Dancing Script', cursive !important;
 }

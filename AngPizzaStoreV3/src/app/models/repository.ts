@@ -10,6 +10,7 @@ const API_ENDPOINT = 'http://localhost:8080/api';
 const productsUrl = API_ENDPOINT + '/products';
 const ordersUrl = API_ENDPOINT + '/orders';
 const sessionsUrl = API_ENDPOINT + '/session';
+const customerUrl = API_ENDPOINT + '/customer';
 
 @Injectable()
 export class Repository {
@@ -48,6 +49,11 @@ export class Repository {
   getProduct(id: number) {
     this.http.get(productsUrl + '/' + id)
       .subscribe(response => this.product = response);
+  }
+
+  getCustomer(id: number) {
+    this.http.get(customerUrl + '/' + id)
+      .subscribe(response => this.customer = response);
   }
 
   getProducts(related = false) {
@@ -114,17 +120,38 @@ storeSessionData(dataType: string, data: any) {
     this.http.put(productsUrl + '/' + prod.productId, data).subscribe(response => this.getProducts());
   }
 
+  replaceCustomer(cust: Customer) {
+    const data = {
+      fname: cust.firstName, lname: cust.lastName, userName: cust.username,
+      email: cust.email, address: cust.address, password: cust.password, points: cust.points
+    };
+    this.http.put(customerUrl + '/' + cust.customerId, data).subscribe(response => this.getCustomer(cust.customerId));
+  }
+
   updateProduct(id: number, changes: Map<string, any>) {
     const patch = [];
     changes.forEach((value, key) =>
       patch.push({ op: 'replace', path: key, value }));
     this.http.patch(productsUrl + '/' + id, patch)
       .subscribe(response => this.getProducts());
-    }
+  }
+
+  updateCustomer(id: number, changes: Map<string, any>) {
+    const patch = [];
+    changes.forEach((value, key) =>
+      patch.push({ op: 'replace', path: key, value }));
+    this.http.patch(customerUrl + '/' + id, patch)
+      .subscribe(response => this.getCustomer(id));
+  }
 
   deleteProduct(id: number) {
     this.http.delete(productsUrl + '/' + id)
       .subscribe(response => this.getProducts());
+  }
+
+  deleteCustomer(id: number) {
+    this.http.delete(customerUrl + '/' + id)
+      .subscribe(response => this.getCustomer(id));
   }
 
   getOrders() {
