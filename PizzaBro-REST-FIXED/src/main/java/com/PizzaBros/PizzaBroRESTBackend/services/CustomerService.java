@@ -66,8 +66,7 @@ public class CustomerService {
                 c.setEmail(customer.getEmail());
                 c.setPoints(customer.getPoints());
                 c.setAddress(customer.getAddress());  
-                c.setPassword(bCryptPasswordEncoder.encode(customer.getPassword()));  
-                
+                c.setPassword(bCryptPasswordEncoder.encode(customer.getPassword()));                 
                 Customer saved = customerRepository.save(c);           
                 return customerMapper.toDto(saved);
             } else {

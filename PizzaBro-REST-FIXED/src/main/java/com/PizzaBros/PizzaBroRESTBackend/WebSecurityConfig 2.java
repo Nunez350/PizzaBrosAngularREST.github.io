@@ -26,8 +26,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	 @Override
 	    protected void configure(HttpSecurity http) throws Exception {
-	        http
-	        .csrf().disable()
+	        http.csrf().disable()
 	            .authorizeRequests()
 	                .antMatchers("/resources/**", "/registration","/login")
 	                .permitAll();
@@ -41,12 +40,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	                
 	               
 	    }
-	 
-	 protected void registerAuthentication(AuthenticationManagerBuilder authManagerBuilder) throws Exception {
-	        authManagerBuilder
-	            .inMemoryAuthentication()
-	                .withUser("username").password("password");
-	 		}
 	 
 	 	@Bean
 	    public AuthenticationManager customAuthenticationManager() throws Exception {

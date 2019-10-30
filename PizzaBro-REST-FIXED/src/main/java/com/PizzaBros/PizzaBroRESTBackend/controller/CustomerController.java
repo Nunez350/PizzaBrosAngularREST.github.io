@@ -105,7 +105,7 @@ public class CustomerController {
 	}
 	
 
-	@PutMapping("/update")
+	@PutMapping("/	")
 	public ResponseEntity<UserDetails> update(@RequestBody Customer cust) {
 		UserDetails userDetails = userDetailsService.loadUserByUsername(cust.getUsername());
 		//System.out.println(userDetails);
@@ -115,7 +115,7 @@ public class CustomerController {
 		return ResponseEntity.ok(userDetails);
 	}
 	
-	
+}	
 //	 public ResponseEntity<CustomerDTO> updateJob(@PathVariable Long customerid, @RequestBody @Valid CustomerDTO customer) {
 //	       CustomerDTO result = customerService.update(customer, customerid);
 //	       return ResponseEntity.ok().body(result);
@@ -143,4 +143,4 @@ public class CustomerController {
 //	}
 
    
-}
+
