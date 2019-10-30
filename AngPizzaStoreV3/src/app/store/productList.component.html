@@ -1,5 +1,10 @@
 <div *ngIf="products?.length > 0; else nodata">
-    <div *ngFor="let product of products" class="card card-outline-primary m-1">
+    <!--
+    <div *ngFor="let product of products" class="card card-outline-primary m-1"> -->
+
+
+
+        <!--
         <div class="card-header">
             <span class="h4">
               <img src="{{product.image}}" alt="[Image Missing]" width="70px" />{{product.name}}
@@ -14,8 +19,48 @@
                 Add to Cart
             </button>
         </div>
+    </div> -->
+
+
+
+    <div class="container">
+        <div *ngFor="let product of products;">
+        <div class="row" >
+            <div class="col-sm" >
+                <span class="h4">
+                    <img src="{{product.image}}" class="rounded-circle" alt="[Image Missing]" width="70" height=" 80" />
+                </span>
+                <div class = "align-bottom">
+                    {{product.name}}
+                    <div class = "align-bottom">
+
+                    </div>
+                    <span class="float-right badge badge-pill badge-primary ">
+                    {{product.price | currency:"USD"}}
+                </span>
+
+                <span class = "border">{{product.description}}</span>
+                <div class = "align-bottom">
+                    <button class=" btn btn-sm btn-success" (click)="addToCart(product)">
+                                Add to Cart
+                    </button>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+            </div>
+        </div>
     </div>
-</div>
+
+
+
+
 <ng-template #nodata>
     <h4 class="m-1">Waiting for data...</h4>
 </ng-template>

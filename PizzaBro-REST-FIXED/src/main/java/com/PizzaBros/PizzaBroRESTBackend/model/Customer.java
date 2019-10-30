@@ -7,11 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
 
 
 
 @Entity
-@Table(name = "Customer")
+@Table(name = "customer")
 public class Customer implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -20,13 +22,26 @@ public class Customer implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
 	private Long id;
+	//private Long memeberid=(long) 0;
 	private String firstName;
 	private String lastName;
-	private String userName;
+	
+	private String username;
 	private String password;
 	private String email;
 	private Integer points;
 	private String address;
+	
+	
+	@Transient
+	private String passwordConfirm;
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -46,10 +61,10 @@ public class Customer implements Serializable {
 		this.lastName = lastName;
 	}
 	public String getUserName() {
-		return userName;
+		return username;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 	public String getPassword() {
 		return password;
@@ -74,6 +89,10 @@ public class Customer implements Serializable {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

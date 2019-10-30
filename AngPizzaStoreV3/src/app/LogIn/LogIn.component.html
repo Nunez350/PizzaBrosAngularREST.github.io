@@ -1,0 +1,43 @@
+
+<head>
+    <!-- Latest compiled JavaScript -->
+
+
+</head>
+
+<body>
+	<div id="imagebg">
+		<!-- our audio file-->
+		<!--<audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>-->
+        <!--navigation feat-->
+        <div class="imgcontainer">
+            <br>
+            <br>
+           <img  alt="MyImage" src="../../assets/images/Rewards4.jpg"
+				class="signUpImage" style="width: 600px; height: 350px;">
+        </div>
+        <div class="container" align="center">
+                <label for="username" style="background-color: #FFED18"><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" [(ngModel)]="customer.username">
+                    <label for="password" style="background-color: #FFED18"><b>Password</b></label>
+                <input type="password" placeholder="Password" name="password" [(ngModel)]="customer.password">
+                   <!--button tag used to create clickable buttons on the web page-->
+            <button type="submit">Login</button>
+            <label style= "background-color: #FFED18" >
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container1" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <!--span tag is used for identifying inline elements in the document-->
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            <!-- paragraph tag-->
+            <p>Not a member yet? Sign up for points and rewards?<a>Sign up now!</a>?</p>
+        </div>
+       <!-- </form>-->
+
+
+    </div>
+
+
+</body>

@@ -11,6 +11,7 @@ export class OverviewComponent {
     get products(): Product[] {
       return this.repo.products;
     }
+    showNavbar = false;
     get orders(): Order[] {
       return this.repo.orders;
     }

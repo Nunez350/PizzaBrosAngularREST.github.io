@@ -1,16 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
+}
+
+
+
 .btn{
-  background: rgb(122, 8, 8);
+  color: white;
+  background: #FF0400;
+  font-size: 21px;
 }
 
 .btn-outline-primary{
-  background: red;
+  background: rgb(122, 8, 8);
 }
 
 body{
-  background-color: rgb(91, 238, 91);
+  background-color: #68FF93;
 }
 
 .nav{
   background-color: gray;
 }
+
+.navbar-nav > li{
+  padding-left:50px;
+  padding-right:50px;
+}
+
+
+.badge-primary {
+  background-color: firebrick;
+}
+
+.bg {
+  background-color: rgb(122, 8, 8);
+}
+
+
+a:hover:not(.active) {
+    background-color: #FFED18;
+  }
+.active {
+    background-color: #FF0D00;
+  }
+
+  .toTheRight{
+    float: right;
+    width:  35px;
+    height: 35px;
+    position: relative;
+    right: 50px;
+}
+
+.header {
+    border-style: solid;
+    border-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+    background-color:red;
+    font-size: 60px;
+}
+
+.textcolor{
+  color: #008000 !important;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+}
+
+.border {
+  border-color: black !important;
+}
+
+.text {
+  font-family: 'Dancing Script', cursive !important;
+}
+
+

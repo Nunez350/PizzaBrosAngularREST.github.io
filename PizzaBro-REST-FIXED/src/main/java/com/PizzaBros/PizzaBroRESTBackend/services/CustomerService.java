@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.PizzaBros.PizzaBroRESTBackend.DTO.CustomerDTO;
 import com.PizzaBros.PizzaBroRESTBackend.DTO.ProductDTO;
@@ -19,28 +20,18 @@ import com.PizzaBros.PizzaBroRESTBackend.repository.CustomerRepository;
 public class CustomerService {
     
     private static List<CustomerDTO> customers = new ArrayList<>();
-        @Autowired
+        
+    	@Autowired
         private CustomerRepository customerRepository;
         
         @Autowired
         private CustomerMapper customerMapper;
         
-        
-//        public List<CustomerDTO> findAll(Long id) {
-//            List<Customer> findAll = null;
-//            
-//            if (id != null && !id.isEmpty()) {
-//                findAll = customerRepository.findAllById(id);
-//            } else {
-//                findAll = customerRepository.findAll();
-//            }
-//            return findAll.stream().map(c -> customerMapper.toDto(c)).collect(Collectors.toList());
-//        }
-//        
+        @Autowired
+        private BCryptPasswordEncoder bCryptPasswordEncoder;
         
         public List<CustomerDTO> findAll(Long id) {
-            List<Customer> findAll;
-            
+            List<Customer> findAll;       
             if (id != null) {
                 findAll = customerRepository.findAllById(id);
             } else {
@@ -74,11 +65,9 @@ public class CustomerService {
                 c.setUserName(customer.getUserName());
                 c.setEmail(customer.getEmail());
                 c.setPoints(customer.getPoints());
-                c.setAddress(customer.getAddress());
-                
-                
-                Customer saved = customerRepository.save(c);
-            
+                c.setAddress(customer.getAddress());  
+                c.setPassword(bCryptPasswordEncoder.encode(customer.getPassword()));                 
+                Customer saved = customerRepository.save(c);           
                 return customerMapper.toDto(saved);
             } else {
                 throw new IllegalArgumentException();
@@ -88,4 +77,32 @@ public class CustomerService {
         public void delete(Long id) {
             customerRepository.deleteById(id);
         }
+        
+        //p-----------------------------
+     
+        public void save(Customer customer) {
+            customer.setPassword(bCryptPasswordEncoder.encode(customer.getPassword()));
+           // user.setRoles(new HashSet<>(roleRepository.findAll()));
+            customerRepository.save(customer);
+        }
+
+
+        public Customer findByUsername(String username) {
+            return customerRepository.findByUsername(username);
+        }
+        
+        
 }
+
+
+//public List<CustomerDTO> findAll(Long id) {
+//  List<Customer> findAll = null;
+//  
+//  if (id != null && !id.isEmpty()) {
+//      findAll = customerRepository.findAllById(id);
+//  } else {
+//      findAll = customerRepository.findAll();
+//  }
+//  return findAll.stream().map(c -> customerMapper.toDto(c)).collect(Collectors.toList());
+//
+//   }

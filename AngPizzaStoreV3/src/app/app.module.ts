@@ -9,12 +9,14 @@ import { ModelModule } from './models/model.module';
 import { StoreModule } from './store/store.module';
 import { AdminModule } from './admin/admin.module';
 import { HomeComponent } from './home/home.component';
-import { SignInComponent } from './SignIn/signIn.component';
+import { LogInComponent } from './LogIn/LogIn.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutUsComponent } from './aboutUs/aboutus.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SignInComponent, HomeComponent, NavbarComponent
+    AppComponent, LogInComponent, HomeComponent, NavbarComponent, AboutUsComponent, CustomerComponent
   ],
   imports: [
     RoutingConfig,

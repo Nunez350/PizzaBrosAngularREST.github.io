@@ -10,6 +10,7 @@ export class OrderAdminComponent {
     get orders(): Order[] {
         return this.repo.orders;
     }
+    showNavbar = false;
     markDelivered(order: Order) {
         this.repo.deliverOrder(order);
     }

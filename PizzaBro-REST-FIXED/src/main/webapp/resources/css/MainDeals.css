@@ -1,0 +1,112 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*glowing text!*/
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/*background color*/
+body {
+  background-color: #383838;
+}
+/*
+.row{
+  background-image: url('ThreeInOne.png');
+   background-repeat: no-repeat;
+   height:400px;
+  
+ }
+ */
+/*
+.TwoOrMoreCombo {
+ left: 0px;
+ width: 350px;
+ height:350px;
+ background: url('ThreeInOne.png') 0 0;
+}
+.PerfectCombo {
+ left: 350px;
+ width: 350px;
+ height:350px;
+ background: url('ThreeInOne.png') -365px 0;
+ 
+}
+.LargeFor12 {
+  left: 350px;
+  width: 350px;
+  height:350px;
+  background: url('ThreeInOne.png') -740px 0;
+ 
+}
+*/
+/*navigation links*/
+
+nav {
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  background-color: black;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ 
+
+nav a{
+  color: white;
+  text-align: center;
+  padding: 21px 19px;
+  text-decoration: none;
+  float: left;
+  border-right:2px solid #bbb;
+
+  }
+
+a:hover:not(.active) {
+  background-color: #FFED18;
+}
+.active {
+  background-color: #FF0D00;
+}
+
+.toTheRight{
+  float: right;
+  width:  35px;
+  height: 35px;
+  position: relative;
+  right: 50px;
+}
+
+
+.id-table {
+  color:#FFED18;
+}
+.h2 {
+  color:#FFED18;
+}
