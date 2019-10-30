@@ -66,10 +66,6 @@ a:hover:not(.active) {
     font-size: 60px;
 }
 
-.bg2 {
-  background-color: lightslategrey;
-}
-
 .textcolor{
   color: #008000 !important;
   font-family: 'Dancing Script', cursive;
@@ -83,3 +79,5 @@ a:hover:not(.active) {
 .text {
   font-family: 'Dancing Script', cursive !important;
 }
+
+

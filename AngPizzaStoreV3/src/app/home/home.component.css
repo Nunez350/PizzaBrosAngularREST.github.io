@@ -4,3 +4,14 @@
   margin-right: auto;
   width: 60%;
 }
+
+.carousel{
+  width: 80%;
+  height: 60%;
+  margin: auto;
+}
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
