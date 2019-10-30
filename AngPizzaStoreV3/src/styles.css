@@ -12,6 +12,7 @@
   color: white;
   background: #FF0400;
   font-size: 21px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .btn-outline-primary{
@@ -23,7 +24,7 @@ body{
 }
 
 .nav{
-  background-color: gray;
+  background-color: white;
 }
 
 .navbar-nav > li{
@@ -80,4 +81,10 @@ a:hover:not(.active) {
   font-family: 'Dancing Script', cursive !important;
 }
 
-
+.footer{
+  position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 20%;
+}

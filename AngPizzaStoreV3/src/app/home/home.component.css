@@ -11,7 +11,26 @@
   margin: auto;
 }
 
-.carousel-inner > .item > img {
-  width:640px;
-  height:360px;
+.caption{
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: black;
+}
+
+.rowHead{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.rowSection{
+  background-color: white;
+}
+
+.rowPar{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.footerAtt{
+  font-family: 'Yantramanav', sans-serif;
+  text-align: center;
 }
