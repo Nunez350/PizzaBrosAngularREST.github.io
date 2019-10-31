@@ -60,10 +60,10 @@ public class Customer implements Serializable {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public String getUserName() {
+	public String getUsername() {
 		return username;
 	}
-	public void setUserName(String username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 	public String getPassword() {
@@ -90,10 +90,7 @@ public class Customer implements Serializable {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getUsername() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	
 	

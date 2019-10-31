@@ -31,7 +31,8 @@ public class CustomerService {
         private BCryptPasswordEncoder bCryptPasswordEncoder;
         
         public List<CustomerDTO> findAll(Long id) {
-            List<Customer> findAll;       
+        	
+            List<Customer> findAll = null;       
             if (id != null) {
                 findAll = customerRepository.findAllById(id);
             } else {
@@ -39,6 +40,8 @@ public class CustomerService {
             }
             return findAll.stream().map(c -> customerMapper.toDto(c)).collect(Collectors.toList());
         }
+        
+        
         
         
         public CustomerDTO findOne(Long Id) {
@@ -62,7 +65,7 @@ public class CustomerService {
                 Customer c = findById.get();
                 c.setFirstName(customer.getFirstName());
                 c.setLastName(customer.getLastName());
-                c.setUserName(customer.getUserName());
+                c.setUsername(customer.getUsername());
                 c.setEmail(customer.getEmail());
                 c.setPoints(customer.getPoints());
                 c.setAddress(customer.getAddress());  

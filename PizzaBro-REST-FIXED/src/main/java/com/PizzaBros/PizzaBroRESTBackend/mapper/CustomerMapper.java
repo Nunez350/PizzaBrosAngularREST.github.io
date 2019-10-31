@@ -11,7 +11,7 @@ public class CustomerMapper {
        Customer customer = new Customer();
        customer.setFirstName(dto.getFirstName());
        customer.setLastName(dto.getLastName());
-       customer.setUserName(dto.getUserName());
+       customer.setUsername(dto.getUsername());
        customer.setPassword(dto.getPassword());
        customer.setEmail(dto.getEmail());
        customer.setPoints(dto.getPoints());
@@ -24,7 +24,7 @@ public class CustomerMapper {
        customer.setCustomerId(entity.getId());
        customer.setFirstName(entity.getFirstName());
        customer.setLastName(entity.getLastName());
-       customer.setUserName(entity.getUserName());
+       customer.setUsername(entity.getUsername());
        customer.setPassword(entity.getPassword());
        customer.setEmail(entity.getEmail());
        customer.setPoints(entity.getPoints());

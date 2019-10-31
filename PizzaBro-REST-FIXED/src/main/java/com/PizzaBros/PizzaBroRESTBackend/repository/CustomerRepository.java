@@ -11,7 +11,7 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
    
 	List<Customer> findAllById(Long customerId );
    
-	List<Customer> findAll();
+	//List<Customer> findAll();
 
 	Customer findByUsername(String username);
 

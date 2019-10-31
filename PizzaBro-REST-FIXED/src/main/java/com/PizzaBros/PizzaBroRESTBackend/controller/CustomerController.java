@@ -25,10 +25,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.PizzaBros.PizzaBroRESTBackend.DTO.CustomerDTO;
+import com.PizzaBros.PizzaBroRESTBackend.DTO.ProductDTO;
 import com.PizzaBros.PizzaBroRESTBackend.model.Customer;
 import com.PizzaBros.PizzaBroRESTBackend.model.CustomerLogin;
 //import com.PizzaBros.PizzaBroRESTBackend.model.User;
 import com.PizzaBros.PizzaBroRESTBackend.services.CustomerService;
+import com.PizzaBros.PizzaBroRESTBackend.services.ProductService;
 import com.PizzaBros.PizzaBroRESTBackend.services.SecurityService;
 
 @RestController
@@ -57,8 +59,13 @@ public class CustomerController {
        return customerService.findAll(customerid);
    }
    
+  
+   
+   
    @GetMapping("/api/customer/{customerId}")
    public CustomerDTO getAll(@PathVariable Long customerId) {
+	   Customer customer = new Customer();
+	   
        return customerService.findOne(customerId);
    }
    
@@ -95,13 +102,14 @@ public class CustomerController {
 	}
 
 	@PostMapping("/login")
-	public ResponseEntity<UserDetails> login(@RequestBody CustomerLogin cust) {
-		UserDetails userDetails = userDetailsService.loadUserByUsername(cust.getUsername());
+	public ResponseEntity<UserDetails> login(@RequestBody CustomerLogin customer) {
+		UserDetails userDetails = userDetailsService.loadUserByUsername(customer.getUsername());
 		//System.out.println(userDetails);
 		//System.out.println("hello");
-        UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, cust.getPassword());
+        UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, customer.getPassword());
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-		return ResponseEntity.ok(userDetails);
+        System.out.println("success|");
+		return  ResponseEntity.ok(userDetails);
 	}
 	
 
